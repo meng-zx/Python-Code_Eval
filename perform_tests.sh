@@ -1,8 +1,8 @@
 #!/bin/bash
 
 report_dir="reports"
-model_names=("example") # put all model names here
-problem_names=("TwoSum") # put all problem names here
+model_names=("example" "GPT4") # put all model names here
+problem_names=("TwoSum" "TrappingRainWater") # put all problem names here
 
 
 for model_name in "${model_names[@]}"; do
@@ -12,7 +12,7 @@ for model_name in "${model_names[@]}"; do
         testcase_folder="testcases/$problem_name"
 
         if [ ! -d "$testcase_folder" ]; then
-            break
+            continue
         fi
         cd "$testcase_folder"
 
@@ -21,15 +21,14 @@ for model_name in "${model_names[@]}"; do
 
         if [ ! -f "$source_file" ]; then
             cd ../..
-            break
+            continue
         fi
 
-        rm -f "$report_file"
         cp "$source_file" .
 
 
         touch "$report_file"
-        printf "$model_name $problem_id $problem_name \n" >> "$report_file"
+        printf "$model_name $problem_id $problem_name \n" > "$report_file"
 
         printf "\n" >> "$report_file"
         printf "Test: QA \n" >> "$report_file"

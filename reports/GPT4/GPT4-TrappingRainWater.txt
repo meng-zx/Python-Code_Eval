@@ -1,0 +1,93 @@
+GPT4 1 TrappingRainWater 
+
+Test: QA 
+test_empty (TrappingRainWater_test.TestWaterTrap) ... ok
+test_example1 (TrappingRainWater_test.TestWaterTrap) ... ok
+test_example2 (TrappingRainWater_test.TestWaterTrap) ... ok
+test_no_trap (TrappingRainWater_test.TestWaterTrap) ... ok
+test_single_peak (TrappingRainWater_test.TestWaterTrap) ... ok
+
+Failed Test Cases Summary:
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+Summary:
+Total tests run: 5
+Passed tests: 5
+Failed tests: 0
+Pass percentage: 100.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00006 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.93 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of TrappingRainWater.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+TrappingRainWater.py
+    F 1:0 trap_water - A
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (5.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+TrappingRainWater.py:
+    h1: 4
+    h2: 15
+    N1: 11
+    N2: 22
+    vocabulary: 19
+    length: 33
+    calculated_length: 66.60335893412778
+    volume: 140.1816079436383
+    difficulty: 2.933333333333333
+    effort: 411.199383301339
+    time: 22.844410183407724
+    bugs: 0.04672720264787944
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+TrappingRainWater.py
+    LOC: 23
+    LLOC: 18
+    SLOC: 18
+    Comments: 5
+    Single comments: 2
+    Multi: 0
+    Blank: 3
+    - Comment Stats
+        (C % L): 22%
+        (C % S): 28%
+        (C + M % L): 22%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+TrappingRainWater.py - A (82.87)
+=====================================
+
+Test: Style 
+************* Module TrappingRainWater
+TrappingRainWater.py:23:0: C0305: Trailing newlines (trailing-newlines)
+TrappingRainWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TrappingRainWater.py:1:0: C0103: Module name "TrappingRainWater" doesn't conform to snake_case naming style (invalid-name)
+TrappingRainWater.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 7.33/10 (previous run: 7.33/10, +0.00)
+
