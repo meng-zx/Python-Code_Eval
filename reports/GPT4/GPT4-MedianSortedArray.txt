@@ -1,0 +1,105 @@
+GPT4 3 MedianSortedArray 
+
+Test: QA 
+test_both_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_empty_first_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_empty_second_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_example1 (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_example2 (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_large_numbers (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+
+Failed Test Cases Summary:
+- test_both_empty_arrays: Failed
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+FAILED (failures=1)
+
+Summary:
+Total tests run: 6
+Passed tests: 5
+Failed tests: 1
+Pass percentage: 83.33%
+
+Test: Time 
+Average running time over 1000 runs: 0.00049526 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.79 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of MedianSortedArray.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+MedianSortedArray.py
+    F 1:0 findMedianSortedArrays - C
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: C (11.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+MedianSortedArray.py:
+    h1: 9
+    h2: 26
+    N1: 25
+    N2: 50
+    vocabulary: 35
+    length: 75
+    calculated_length: 150.74075768464922
+    volume: 384.6962262708725
+    difficulty: 8.653846153846153
+    effort: 3329.1019581133196
+    time: 184.9501087840733
+    bugs: 0.12823207542362416
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+MedianSortedArray.py
+    LOC: 36
+    LLOC: 22
+    SLOC: 22
+    Comments: 9
+    Single comments: 7
+    Multi: 0
+    Blank: 7
+    - Comment Stats
+        (C % L): 25%
+        (C % S): 41%
+        (C + M % L): 25%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+MedianSortedArray.py - A (79.50)
+=====================================
+
+Test: Style 
+************* Module MedianSortedArray
+MedianSortedArray.py:14:0: C0301: Line too long (110/100) (line-too-long)
+MedianSortedArray.py:23:0: C0301: Line too long (129/100) (line-too-long)
+MedianSortedArray.py:36:0: C0304: Final newline missing (missing-final-newline)
+MedianSortedArray.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+MedianSortedArray.py:1:0: C0103: Module name "MedianSortedArray" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+MedianSortedArray.py:1:0: C0103: Function name "findMedianSortedArrays" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:10:8: C0103: Variable name "partitionX" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:11:8: C0103: Variable name "partitionY" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:15:8: C0103: Variable name "maxLeftX" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:16:8: C0103: Variable name "minRightX" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:18:8: C0103: Variable name "maxLeftY" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:19:8: C0103: Variable name "minRightY" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:25:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
+------------------------------------------------------------------
+Your code has been rated at 3.00/10 (previous run: 3.00/10, +0.00)
+
