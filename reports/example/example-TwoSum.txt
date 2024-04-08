@@ -1,0 +1,93 @@
+example 0 TwoSum 
+
+Test: QA 
+test_example1 (TwoSum_test.TestTwoSum) ... ok
+test_example2 (TwoSum_test.TestTwoSum) ... ok
+test_example3 (TwoSum_test.TestTwoSum) ... ok
+test_large_numbers (TwoSum_test.TestTwoSum) ... ok
+test_negative_numbers (TwoSum_test.TestTwoSum) ... ok
+
+Failed Test Cases Summary:
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+Summary:
+Total tests run: 5
+Passed tests: 5
+Failed tests: 0
+Pass percentage: 100.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00006 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.90 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of TwoSum.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+TwoSum.py
+    F 1:0 two_sum - A
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+TwoSum.py:
+    h1: 2
+    h2: 4
+    N1: 2
+    N2: 4
+    vocabulary: 6
+    length: 6
+    calculated_length: 10.0
+    volume: 15.509775004326936
+    difficulty: 1.0
+    effort: 15.509775004326936
+    time: 0.861654166907052
+    bugs: 0.005169925001442312
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+TwoSum.py
+    LOC: 14
+    LLOC: 8
+    SLOC: 8
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 43%
+        (C % S): 75%
+        (C + M % L): 43%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+TwoSum.py - A (100.00)
+=====================================
+
+Test: Style 
+************* Module TwoSum
+TwoSum.py:14:0: C0304: Final newline missing (missing-final-newline)
+TwoSum.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TwoSum.py:1:0: C0103: Module name "TwoSum" doesn't conform to snake_case naming style (invalid-name)
+TwoSum.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 5.00/10, +0.00)
+

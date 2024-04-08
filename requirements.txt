@@ -1,0 +1,4 @@
+memory_profiler==0.61.0
+numpy==1.25.1
+pylint==3.1.0
+
