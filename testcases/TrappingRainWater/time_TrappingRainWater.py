@@ -17,7 +17,7 @@ def main(runs=1000):
     for _ in range(runs):
         total_time += run_test_suite()
     average_time = total_time / runs
-    print(f"Average running time over {runs} runs: {average_time:.5f} seconds")
+    print(f"Average running time over {runs} runs: {average_time:.8f} seconds")
 
 if __name__ == '__main__':
     main()

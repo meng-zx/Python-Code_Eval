@@ -1,29 +1,102 @@
 GPT4 1 TrappingRainWater 
 
 Test: QA 
-test_empty (TrappingRainWater_test.TestWaterTrap) ... ok
+test_all_same_height (TrappingRainWater_test.TestWaterTrap)
+Test with all bars having the same height ... ok
+test_alternating_high_low (TrappingRainWater_test.TestWaterTrap)
+Test with alternating high and low bars ... ok
+test_ascending_plateau_descending (TrappingRainWater_test.TestWaterTrap)
+Test with an ascending plateau then descending ... FAIL
+test_complex_pattern (TrappingRainWater_test.TestWaterTrap)
+Test with a complex pattern of bars ... FAIL
+test_decreasing_bars (TrappingRainWater_test.TestWaterTrap)
+Test with strictly decreasing bar heights ... ok
+test_descending_then_ascending (TrappingRainWater_test.TestWaterTrap)
+Test with heights descending then ascending ... FAIL
+test_dips_on_edges (TrappingRainWater_test.TestWaterTrap)
+Test with dips on both edges ... ok
+test_empty (TrappingRainWater_test.TestWaterTrap)
+Test with an empty array ... ok
 test_example1 (TrappingRainWater_test.TestWaterTrap) ... ok
 test_example2 (TrappingRainWater_test.TestWaterTrap) ... ok
+test_flat_surface (TrappingRainWater_test.TestWaterTrap)
+Test with a flat surface ... ok
+test_high_plateau (TrappingRainWater_test.TestWaterTrap)
+Test with a high plateau ... ok
+test_increasing_bars (TrappingRainWater_test.TestWaterTrap)
+Test with strictly increasing bar heights ... ok
+test_increasing_decreasing_with_plateau (TrappingRainWater_test.TestWaterTrap)
+Test with increasing, plateau, and then decreasing heights ... ok
+test_large_input (TrappingRainWater_test.TestWaterTrap)
+Test with a very large input array ... ok
+test_large_input_ascending_descending (TrappingRainWater_test.TestWaterTrap)
+Test with a large input array, ascending then descending ... ok
+test_large_input_with_zeros (TrappingRainWater_test.TestWaterTrap)
+Test with a large input array containing zeros ... ok
+test_large_numbers (TrappingRainWater_test.TestWaterTrap)
+Test with very large numbers ... ok
+test_large_numbers_random (TrappingRainWater_test.TestWaterTrap)
+Test with large numbers in a random pattern ... FAIL
+test_long_plateau (TrappingRainWater_test.TestWaterTrap)
+Test with a long, flat plateau ... ok
+test_low_plateau_in_middle (TrappingRainWater_test.TestWaterTrap)
+Test with a low plateau in the middle ... FAIL
+test_multiple_peaks_and_valleys (TrappingRainWater_test.TestWaterTrap)
+Test with multiple peaks and valleys ... FAIL
 test_no_trap (TrappingRainWater_test.TestWaterTrap) ... ok
+test_peak_at_end (TrappingRainWater_test.TestWaterTrap)
+Test with a peak at the end ... ok
+test_peak_at_start (TrappingRainWater_test.TestWaterTrap)
+Test with a peak at the start ... ok
+test_peak_in_the_middle (TrappingRainWater_test.TestWaterTrap)
+Test with a peak in the middle ... ok
+test_random_distribution (TrappingRainWater_test.TestWaterTrap)
+Test with a random distribution of heights ... FAIL
+test_rapid_altitude_changes (TrappingRainWater_test.TestWaterTrap)
+Test with rapid altitude changes ... FAIL
+test_repeated_patterns (TrappingRainWater_test.TestWaterTrap)
+Test with repeated patterns ... ok
+test_sawtooth_pattern (TrappingRainWater_test.TestWaterTrap)
+Test with a sawtooth pattern ... ok
+test_sharp_peak (TrappingRainWater_test.TestWaterTrap)
+Test with a sharp peak ... ok
+test_single_bar (TrappingRainWater_test.TestWaterTrap)
+Test with a single bar ... ok
+test_single_dip (TrappingRainWater_test.TestWaterTrap)
+Test with a single dip ... ok
+test_single_large_dip (TrappingRainWater_test.TestWaterTrap)
+Test with a single large dip ... ok
 test_single_peak (TrappingRainWater_test.TestWaterTrap) ... ok
+test_very_deep_single_dip (TrappingRainWater_test.TestWaterTrap)
+Test with a very deep, single dip ... ok
+test_wide_valley (TrappingRainWater_test.TestWaterTrap)
+Test with a wide valley ... ok
 
 Failed Test Cases Summary:
+- test_ascending_plateau_descending: Failed
+- test_complex_pattern: Failed
+- test_descending_then_ascending: Failed
+- test_large_numbers_random: Failed
+- test_low_plateau_in_middle: Failed
+- test_multiple_peaks_and_valleys: Failed
+- test_random_distribution: Failed
+- test_rapid_altitude_changes: Failed
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 37 tests in 0.017s
 
-OK
+FAILED (failures=8)
 
 Summary:
-Total tests run: 5
-Passed tests: 5
-Failed tests: 0
-Pass percentage: 100.00%
+Total tests run: 37
+Passed tests: 29
+Failed tests: 8
+Pass percentage: 78.38%
 
 Test: Time 
-Average running time over 1000 runs: 0.00006 seconds
+Average running time over 1000 runs: 0.00629700 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.93 MiB
+Average memory usage over 100 runs: 38.23 MiB
 
 Test: Maintainability 
 =======================================
