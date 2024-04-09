@@ -11,7 +11,7 @@ test_large_numbers (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
 Failed Test Cases Summary:
 - test_both_empty_arrays: Failed
 ----------------------------------------------------------------------
-Ran 6 tests in 0.003s
+Ran 6 tests in 0.008s
 
 FAILED (failures=1)
 
@@ -22,10 +22,10 @@ Failed tests: 1
 Pass percentage: 83.33%
 
 Test: Time 
-Average running time over 1000 runs: 0.00049526 seconds
+Average running time over 1000 runs: 0.00150002 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.79 MiB
+Average memory usage over 100 runs: 37.72 MiB
 
 Test: Maintainability 
 =======================================
