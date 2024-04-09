@@ -82,7 +82,7 @@ Failed Test Cases Summary:
 - test_random_distribution: Failed
 - test_rapid_altitude_changes: Failed
 ----------------------------------------------------------------------
-Ran 37 tests in 0.049s
+Ran 37 tests in 0.048s
 
 FAILED (failures=8)
 
@@ -93,10 +93,10 @@ Failed tests: 8
 Pass percentage: 78.38%
 
 Test: Time 
-Average running time over 1000 runs: 0.01941427 seconds
+Average running time over 1000 runs: 0.02192608 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.32 MiB
+Average memory usage over 100 runs: 38.29 MiB
 
 Test: Maintainability 
 =======================================

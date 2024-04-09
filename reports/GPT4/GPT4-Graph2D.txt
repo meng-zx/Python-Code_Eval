@@ -1,0 +1,97 @@
+GPT4 9 Graph2D 
+
+Test: QA 
+test_descending_path (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_example1 (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_example2 (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_example3 (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_large_matrix (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_no_increasing_path (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_single_column (Graph2D_test.TestLongestIncreasingPath) ... ok
+test_single_row (Graph2D_test.TestLongestIncreasingPath) ... ok
+
+Failed Test Cases Summary:
+----------------------------------------------------------------------
+Ran 8 tests in 0.071s
+
+OK
+
+Summary:
+Total tests run: 8
+Passed tests: 8
+Failed tests: 0
+Pass percentage: 100.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.05252735 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 40.62 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of Graph2D.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+Graph2D.py
+    F 1:0 longestIncreasingPath - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (6.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+Graph2D.py:
+    h1: 9
+    h2: 22
+    N1: 15
+    N2: 25
+    vocabulary: 31
+    length: 40
+    calculated_length: 126.63682062300134
+    volume: 198.16785241547504
+    difficulty: 5.113636363636363
+    effort: 1013.3583362154973
+    time: 56.2976853453054
+    bugs: 0.06605595080515834
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+Graph2D.py
+    LOC: 22
+    LLOC: 20
+    SLOC: 20
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 2
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+Graph2D.py - A (54.73)
+=====================================
+
+Test: Style 
+************* Module Graph2D
+Graph2D.py:22:0: C0304: Final newline missing (missing-final-newline)
+Graph2D.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+Graph2D.py:1:0: C0103: Module name "Graph2D" doesn't conform to snake_case naming style (invalid-name)
+Graph2D.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+Graph2D.py:1:0: C0103: Function name "longestIncreasingPath" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 7.50/10
+
