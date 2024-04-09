@@ -9,7 +9,7 @@ test_negative_numbers (TwoSum_test.TestTwoSum) ... ok
 
 Failed Test Cases Summary:
 ----------------------------------------------------------------------
-Ran 5 tests in 0.001s
+Ran 5 tests in 0.002s
 
 OK
 
@@ -20,10 +20,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00005703 seconds
+Average running time over 1000 runs: 0.00006260 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.51 MiB
+Average memory usage over 100 runs: 38.61 MiB
 
 Test: Maintainability 
 =======================================

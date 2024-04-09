@@ -10,7 +10,7 @@ test_negative_result (RPN_test.TestEvalRPN) ... ok
 
 Failed Test Cases Summary:
 ----------------------------------------------------------------------
-Ran 6 tests in 0.001s
+Ran 6 tests in 0.002s
 
 OK
 
@@ -21,10 +21,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00006536 seconds
+Average running time over 1000 runs: 0.00007108 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.63 MiB
+Average memory usage over 100 runs: 37.95 MiB
 
 Test: Maintainability 
 =======================================
