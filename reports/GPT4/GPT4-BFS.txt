@@ -1,0 +1,102 @@
+GPT4 5 BFS 
+
+Test: QA 
+test_diagonal_non_adjacent (BFS_test.TestFindWords) ... FAIL
+test_empty_board (BFS_test.TestFindWords) ... ok
+test_empty_words (BFS_test.TestFindWords) ... ok
+test_example1 (BFS_test.TestFindWords) ... ok
+test_example2 (BFS_test.TestFindWords) ... ok
+test_large_input (BFS_test.TestFindWords) ... FAIL
+test_single_character_board_and_word (BFS_test.TestFindWords) ... ok
+
+Failed Test Cases Summary:
+- test_diagonal_non_adjacent: Failed
+- test_large_input: Failed
+----------------------------------------------------------------------
+Ran 7 tests in 0.047s
+
+FAILED (failures=2)
+
+Summary:
+Total tests run: 7
+Passed tests: 5
+Failed tests: 2
+Pass percentage: 71.43%
+
+Test: Time 
+Average running time over 1000 runs: 0.05226027 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.93 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of BFS.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+BFS.py
+    F 10:0 findWords - B
+    C 4:0 TrieNode - A
+    M 5:4 TrieNode.__init__ - A
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+BFS.py:
+    h1: 6
+    h2: 17
+    N1: 12
+    N2: 27
+    vocabulary: 23
+    length: 39
+    calculated_length: 84.99664330558272
+    volume: 176.41891628622352
+    difficulty: 4.764705882352941
+    effort: 840.5842481873003
+    time: 46.69912489929446
+    bugs: 0.05880630542874117
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+BFS.py
+    LOC: 40
+    LLOC: 29
+    SLOC: 29
+    Comments: 4
+    Single comments: 1
+    Multi: 0
+    Blank: 10
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 14%
+        (C + M % L): 10%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+BFS.py - A (71.77)
+=====================================
+
+Test: Style 
+************* Module BFS
+BFS.py:27:0: C0301: Line too long (103/100) (line-too-long)
+BFS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+BFS.py:1:0: C0103: Module name "BFS" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+BFS.py:4:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+BFS.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
+BFS.py:10:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 7.59/10 (previous run: 7.59/10, +0.00)
+

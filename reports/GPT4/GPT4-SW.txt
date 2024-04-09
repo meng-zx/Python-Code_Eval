@@ -1,0 +1,97 @@
+GPT4 6 SW 
+
+Test: QA 
+test_all_equal_elements (SW_test.TestMaxSlidingWindow) ... ok
+test_descending_and_ascending_order (SW_test.TestMaxSlidingWindow) ... ok
+test_example1 (SW_test.TestMaxSlidingWindow) ... ok
+test_mixed_positive_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_negative_numbers (SW_test.TestMaxSlidingWindow) ... ok
+test_single_element (SW_test.TestMaxSlidingWindow) ... ok
+test_window_size_equals_array_length (SW_test.TestMaxSlidingWindow) ... ok
+test_window_size_one (SW_test.TestMaxSlidingWindow) ... ok
+
+Failed Test Cases Summary:
+- test_mixed_positive_negative_numbers: Failed
+----------------------------------------------------------------------
+Ran 8 tests in 0.010s
+
+FAILED (failures=1)
+
+Summary:
+Total tests run: 8
+Passed tests: 7
+Failed tests: 1
+Pass percentage: 87.50%
+
+Test: Time 
+Average running time over 1000 runs: 0.00171224 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.89 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of SW.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+SW.py
+    F 4:0 maxSlidingWindow - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (7.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+SW.py:
+    h1: 6
+    h2: 12
+    N1: 9
+    N2: 17
+    vocabulary: 18
+    length: 26
+    calculated_length: 58.52932501298082
+    volume: 108.41805003750011
+    difficulty: 4.25
+    effort: 460.77671265937545
+    time: 25.598706258854193
+    bugs: 0.036139350012500036
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+SW.py
+    LOC: 26
+    LLOC: 13
+    SLOC: 13
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 7
+    - Comment Stats
+        (C % L): 23%
+        (C % S): 46%
+        (C + M % L): 23%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+SW.py - A (89.36)
+=====================================
+
+Test: Style 
+************* Module SW
+SW.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+SW.py:1:0: C0103: Module name "SW" doesn't conform to snake_case naming style (invalid-name)
+SW.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+SW.py:4:0: C0103: Function name "maxSlidingWindow" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 6.92/10
+

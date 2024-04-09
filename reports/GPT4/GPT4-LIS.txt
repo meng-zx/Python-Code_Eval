@@ -1,0 +1,91 @@
+GPT4 4 LIS 
+
+Test: QA 
+test_edge_cases (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_example_cases (LIS_test.TestLongestIncreasingSubsequence) ... ok
+
+Failed Test Cases Summary:
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+Summary:
+Total tests run: 2
+Passed tests: 2
+Failed tests: 0
+Pass percentage: 100.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00015712 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.92 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of LIS.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+LIS.py
+    F 1:0 lengthOfLIS - A
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (5.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+LIS.py:
+    h1: 4
+    h2: 9
+    N1: 6
+    N2: 12
+    vocabulary: 13
+    length: 18
+    calculated_length: 36.52932501298081
+    volume: 66.60791492653966
+    difficulty: 2.6666666666666665
+    effort: 177.62110647077242
+    time: 9.867839248376246
+    bugs: 0.022202638308846556
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+LIS.py
+    LOC: 17
+    LLOC: 15
+    SLOC: 15
+    Comments: 7
+    Single comments: 2
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 41%
+        (C % S): 47%
+        (C + M % L): 41%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+LIS.py - A (89.79)
+=====================================
+
+Test: Style 
+************* Module LIS
+LIS.py:17:0: C0301: Line too long (101/100) (line-too-long)
+LIS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+LIS.py:1:0: C0103: Module name "LIS" doesn't conform to snake_case naming style (invalid-name)
+LIS.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+LIS.py:1:0: C0103: Function name "lengthOfLIS" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 6.15/10 (previous run: 6.15/10, +0.00)
+
