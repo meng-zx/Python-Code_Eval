@@ -155,6 +155,61 @@ class TestWaterTrap(unittest.TestCase):
         """Test with rapid altitude changes"""
         self.assertEqual(trap_water([5, 4, 3, 4, 5, 2, 1, 2, 3]), 4, "Should handle rapid altitude changes")
 
+    def test_empty_list(self):
+        self.assertEqual(trap_water([]), 0)
+
+    def test_example_1(self):
+        height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+        self.assertEqual(trap_water(height), 6)
+
+    def test_example_2(self):
+        height = [4, 2, 0, 3, 2, 5]
+        self.assertEqual(trap_water(height), 9)
+
+    def test_no_trapped_water(self):
+        height = [5, 4, 3, 2, 1]
+        self.assertEqual(trap_water(height), 0)
+
+    def test_single_element(self):
+        height = [5]
+        self.assertEqual(trap_water(height), 0)
+
+    def test_all_zeros(self):
+        height = [0, 0, 0, 0]
+        self.assertEqual(trap_water(height), 0)
+
+    def test_large_input(self):
+        height = [0] * 20000 + [1] + [0] * 20000
+        self.assertEqual(trap_water(height), 20000)
+
+    def test_alternating_heights(self):
+        height = [1, 0, 1, 0, 1, 0, 1, 0]
+        self.assertEqual(trap_water(height), 4)
+
+    def test_negative_heights(self):
+        height = [-1, 2, -3, 4, -5, 6]
+        self.assertEqual(trap_water(height), 9)
+
+    def test_max_int_heights(self):
+        import sys
+        height = [sys.maxsize, 0, sys.maxsize, 0, sys.maxsize]
+        self.assertEqual(trap_water(height), 0)
+
+    def test_random_heights(self):
+        random.seed(42)
+        height = [random.randint(0, 1000) for _ in range(1000)]
+        expected = self.brute_force_trap_water(height)
+        self.assertEqual(trap_water(height), expected)
+
+    def brute_force_trap_water(self, height):
+        n = len(height)
+        trapped_water = 0
+        for i in range(1, n - 1):
+            max_left = max(height[:i])
+            max_right = max(height[i + 1:])
+            trapped_water += max(0, min(max_left, max_right) - height[i])
+        return trapped_water
+
 
 # To run the tests
 if __name__ == '__main__':

@@ -23,5 +23,78 @@ class TestComputeArea(unittest.TestCase):
     def test_negative_coordinates(self):
         self.assertEqual(compute_area(-4, -4, -2, -2, -3, -3, -1, -1), 9)
 
+    def test_non_overlapping_rectangles(self):
+        self.assertEqual(compute_area(-3, 0, 3, 4, 4, 5, 9, 8), 39)
+
+    def test_rectangle_within_rectangle(self):
+        self.assertEqual(compute_area(-4, -4, 4, 4, -2, -2, 2, 2), 64)
+
+    def test_touching_rectangles(self):
+        self.assertEqual(compute_area(-3, 0, 3, 4, 3, 0, 6, 4), 42)
+
+    def test_overlapping_lines(self):
+        self.assertEqual(compute_area(-3, 0, 3, 0, -1, 0, 2, 0), 0)
+
+    def test_one_line_rectangle(self):
+        self.assertEqual(compute_area(-3, 0, 3, 0, 0, -1, 9, 2), 15)
+
+    def test_large_coordinates(self):
+        self.assertEqual(compute_area(-10000, -10000, 10000, 10000, -10000, -10000, 10000, 10000), 400000000)
+
+    def test_no_overlap_large_coordinates(self):
+        self.assertEqual(compute_area(-10000, -10000, -5000, -5000, 5000, 5000, 10000, 10000), 50000000)
+
+    def test_edges_touching(self):
+        self.assertEqual(compute_area(-3, -1, 1, 3, 1, -3, 3, 1), 32)
+
+    def test_edge_touching_at_point(self):
+        self.assertEqual(compute_area(-3, 0, 0, 3, 0, 0, 3, 3), 18)
+
+    def test_rectangles_overlap_at_corner(self):
+        self.assertEqual(compute_area(-2, -2, 1, 1, 1, 1, 4, 4), 21)
+
+    def test_negative_and_positive_overlap(self):
+        self.assertEqual(compute_area(-5, -5, 0, 0, -1, -1, 5, 5), 49)
+
+    def test_large_negative_coordinates(self):
+        self.assertEqual(compute_area(-10000, -10000, -9000, -9000, -9500, -9500, -8500, -8500), 25000000)
+
+    def test_rectangles_with_zero_width(self):
+        self.assertEqual(compute_area(-3, 0, -3, 4, 0, 0, 0, 5), 0)
+
+    def test_rectangles_with_zero_height(self):
+        self.assertEqual(compute_area(-3, 4, 3, 4, -1, 2, 2, 2), 0)
+
+    def test_rectangle_as_a_point(self):
+        self.assertEqual(compute_area(0, 0, 0, 0, -1, -1, 1, 1), 4)
+
+    def test_both_rectangles_as_points(self):
+        self.assertEqual(compute_area(1, 1, 1, 1, 2, 2, 2, 2), 0)
+
+    def test_overlap_with_negative_and_positive_quadrants(self):
+        self.assertEqual(compute_area(-3, -3, 3, 3, -2, -2, 2, 2), 36)
+
+    def test_large_rectangle_with_small_overlap(self):
+        self.assertEqual(compute_area(-10000, -10000, 10000, 10000, -1, -1, 1, 1), 400000004)
+
+    def test_small_rectangle_fully_inside_large_rectangle(self):
+        self.assertEqual(compute_area(-100, -100, 100, 100, -1, -1, 1, 1), 40000)
+
+    def test_same_bottom_left_corner_different_sizes(self):
+        self.assertEqual(compute_area(-3, -3, 5, 5, -3, -3, 3, 3), 64)
+
+    def test_same_top_right_corner_different_sizes(self):
+        self.assertEqual(compute_area(-5, -5, 3, 3, -3, -3, 3, 3), 64)
+
+    def test_extremely_small_overlap(self):
+        self.assertEqual(compute_area(-100, -100, 100, 100, 99, 99, 101, 101), 40004)
+
+    def test_rectangles_touching_sides_not_overlapping(self):
+        self.assertEqual(compute_area(-4, -4, 0, 0, 0, 0, 4, 4), 32)
+
+    def test_overlapping_edges_exactly(self):
+        self.assertEqual(compute_area(-10, -10, -5, 0, -5, -10, 0, 0), 100)
+
+
 if __name__ == '__main__':
     unittest.main()
