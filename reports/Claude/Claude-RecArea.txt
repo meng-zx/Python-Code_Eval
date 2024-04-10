@@ -1,4 +1,4 @@
-GPT4 1 RecArea 
+Claude 1 RecArea 
 
 Test: QA 
 test_both_rectangles_as_points (RecArea_test.TestComputeArea) ... ok
@@ -28,7 +28,7 @@ Failed Test Cases Summary:
 - test_one_line_rectangle: Failed
 - test_touching_rectangles: Failed
 ----------------------------------------------------------------------
-Ran 18 tests in 0.006s
+Ran 18 tests in 0.008s
 
 FAILED (failures=6)
 
@@ -39,10 +39,10 @@ Failed tests: 6
 Pass percentage: 66.67%
 
 Test: Time 
-Average running time over 100 runs: 0.00245342 seconds
+Average running time over 100 runs: 0.00239606 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.11 MiB
+Average memory usage over 100 runs: 37.91 MiB
 
 Test: Maintainability 
 =======================================
@@ -56,48 +56,48 @@ RecArea.py
     F 1:0 compute_area - A
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: A (1.0)
+Average complexity: A (3.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 RecArea.py:
-    h1: 3
-    h2: 22
-    N1: 11
-    N2: 22
-    vocabulary: 25
-    length: 33
-    calculated_length: 102.862383112184
-    volume: 153.24725426256592
-    difficulty: 1.5
-    effort: 229.8708813938489
-    time: 12.770604521880493
-    bugs: 0.05108241808752197
+    h1: 5
+    h2: 24
+    N1: 14
+    N2: 28
+    vocabulary: 29
+    length: 42
+    calculated_length: 121.64874049174458
+    volume: 204.03520179535806
+    difficulty: 2.9166666666666665
+    effort: 595.1026719031277
+    time: 33.06125955017376
+    bugs: 0.06801173393178601
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 RecArea.py
-    LOC: 14
-    LLOC: 7
-    SLOC: 7
+    LOC: 20
+    LLOC: 12
+    SLOC: 12
     Comments: 4
     Single comments: 4
     Multi: 0
-    Blank: 3
+    Blank: 4
     - Comment Stats
-        (C % L): 29%
-        (C % S): 57%
-        (C + M % L): 29%
+        (C % L): 20%
+        (C % S): 33%
+        (C + M % L): 20%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-RecArea.py - A (95.37)
+RecArea.py - A (87.10)
 =====================================
 
 Test: Style 
@@ -106,7 +106,8 @@ RecArea.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 RecArea.py:1:0: C0103: Module name "RecArea" doesn't conform to snake_case naming style (invalid-name)
 RecArea.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 RecArea.py:1:0: R0913: Too many arguments (8/5) (too-many-arguments)
+RecArea.py:1:0: R0914: Too many local variables (16/15) (too-many-locals)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.29/10 (previous run: 5.00/10, -0.71)
+Your code has been rated at 5.83/10 (previous run: 4.29/10, +1.55)
 

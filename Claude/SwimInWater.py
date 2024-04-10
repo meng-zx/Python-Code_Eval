@@ -1,7 +1,5 @@
 from collections import deque
 
-
-
 def swim_in_water(grid):
     n = len(grid)
     directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]

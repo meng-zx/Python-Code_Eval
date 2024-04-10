@@ -1,0 +1,106 @@
+CodeWhisperer 2 MedianSortedArray 
+
+Test: QA 
+test_both_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_empty_first_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_empty_second_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_example1 (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_example2 (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+test_large_numbers (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
+
+Failed Test Cases Summary:
+- test_both_empty_arrays: Failed
+- test_empty_first_array: Failed
+- test_empty_second_array: Failed
+- test_example1: Failed
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+FAILED (failures=4)
+
+Summary:
+Total tests run: 7
+Passed tests: 3
+Failed tests: 4
+Pass percentage: 42.86%
+
+Test: Time 
+Average running time over 100 runs: 0.00164222 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.71 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of MedianSortedArray.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+MedianSortedArray.py
+    F 1:0 findMedianSortedArrays - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (9.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+MedianSortedArray.py:
+    h1: 7
+    h2: 20
+    N1: 19
+    N2: 38
+    vocabulary: 27
+    length: 57
+    calculated_length: 106.09004635215048
+    volume: 271.0285876233177
+    difficulty: 6.65
+    effort: 1802.340107695063
+    time: 100.13000598305905
+    bugs: 0.0903428625411059
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+MedianSortedArray.py
+    LOC: 25
+    LLOC: 22
+    SLOC: 22
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 3
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+MedianSortedArray.py - A (52.47)
+=====================================
+
+Test: Style 
+************* Module MedianSortedArray
+MedianSortedArray.py:25:0: C0304: Final newline missing (missing-final-newline)
+MedianSortedArray.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+MedianSortedArray.py:1:0: C0103: Module name "MedianSortedArray" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+MedianSortedArray.py:1:0: C0103: Function name "findMedianSortedArrays" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:10:8: C0103: Variable name "L1" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:11:8: C0103: Variable name "R1" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:12:8: C0103: Variable name "L2" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:13:8: C0103: Variable name "R2" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:20:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+MedianSortedArray.py:1:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 4.50/10 (previous run: 5.00/10, -0.50)
+

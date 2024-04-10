@@ -1,37 +1,51 @@
-watsonx 7 RecArea 
+watsonx 1 RecArea 
 
 Test: QA 
+test_both_rectangles_as_points (RecArea_test.TestComputeArea) ... ok
 test_complete_overlap (RecArea_test.TestComputeArea) ... FAIL
-test_contained (RecArea_test.TestComputeArea) ... FAIL
-test_corner_touching (RecArea_test.TestComputeArea) ... ok
-test_edge_touching (RecArea_test.TestComputeArea) ... FAIL
-test_negative_coordinates (RecArea_test.TestComputeArea) ... FAIL
+test_extremely_small_overlap (RecArea_test.TestComputeArea) ... ok
+test_large_coordinates (RecArea_test.TestComputeArea) ... FAIL
+test_large_negative_coordinates (RecArea_test.TestComputeArea) ... FAIL
+test_large_rectangle_with_small_overlap (RecArea_test.TestComputeArea) ... ok
 test_no_overlap (RecArea_test.TestComputeArea) ... FAIL
+test_no_overlap_large_coordinates (RecArea_test.TestComputeArea) ... ok
+test_one_line_rectangle (RecArea_test.TestComputeArea) ... FAIL
 test_overlap (RecArea_test.TestComputeArea) ... FAIL
+test_overlap_with_negative_and_positive_quadrants (RecArea_test.TestComputeArea) ... FAIL
+test_overlapping_edges_exactly (RecArea_test.TestComputeArea) ... ok
+test_overlapping_lines (RecArea_test.TestComputeArea) ... ok
+test_rectangles_touching_sides_not_overlapping (RecArea_test.TestComputeArea) ... ok
+test_rectangles_with_zero_height (RecArea_test.TestComputeArea) ... ok
+test_rectangles_with_zero_width (RecArea_test.TestComputeArea) ... ok
+test_small_rectangle_fully_inside_large_rectangle (RecArea_test.TestComputeArea) ... FAIL
+test_touching_rectangles (RecArea_test.TestComputeArea) ... FAIL
 
 Failed Test Cases Summary:
 - test_complete_overlap: Failed
-- test_contained: Failed
-- test_edge_touching: Failed
-- test_negative_coordinates: Failed
+- test_large_coordinates: Failed
+- test_large_negative_coordinates: Failed
 - test_no_overlap: Failed
+- test_one_line_rectangle: Failed
 - test_overlap: Failed
+- test_overlap_with_negative_and_positive_quadrants: Failed
+- test_small_rectangle_fully_inside_large_rectangle: Failed
+- test_touching_rectangles: Failed
 ----------------------------------------------------------------------
-Ran 7 tests in 0.004s
+Ran 18 tests in 0.008s
 
-FAILED (failures=6)
+FAILED (failures=9)
 
 Summary:
-Total tests run: 7
-Passed tests: 1
-Failed tests: 6
-Pass percentage: 14.29%
+Total tests run: 18
+Passed tests: 9
+Failed tests: 9
+Pass percentage: 50.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00230298 seconds
+Average running time over 100 runs: 0.00442285 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.83 MiB
+Average memory usage over 100 runs: 38.27 MiB
 
 Test: Maintainability 
 =======================================

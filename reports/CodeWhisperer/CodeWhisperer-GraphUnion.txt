@@ -1,0 +1,124 @@
+CodeWhisperer 0 GraphUnion 
+
+Test: QA 
+test_already_connected (GraphUnion_test.TestMakeConnected) ... ERROR
+test_completely_disconnected (GraphUnion_test.TestMakeConnected) ... ERROR
+test_example1 (GraphUnion_test.TestMakeConnected) ... ERROR
+test_example2 (GraphUnion_test.TestMakeConnected) ... ERROR
+test_example3 (GraphUnion_test.TestMakeConnected) ... ERROR
+test_extra_cables (GraphUnion_test.TestMakeConnected) ... ERROR
+test_fully_connected (GraphUnion_test.TestMakeConnected) ... ERROR
+test_insufficient_cables (GraphUnion_test.TestMakeConnected) ... ERROR
+test_large_network_multiple_redundant_connections (GraphUnion_test.TestMakeConnected) ... ERROR
+test_network_fully_connected_no_extra_cables (GraphUnion_test.TestMakeConnected) ... ERROR
+test_no_computers (GraphUnion_test.TestMakeConnected) ... ERROR
+test_no_connections (GraphUnion_test.TestMakeConnected) ... ERROR
+test_single_computer (GraphUnion_test.TestMakeConnected) ... ERROR
+test_single_extra_cable_needed (GraphUnion_test.TestMakeConnected) ... ERROR
+test_two_components_need_two_cables (GraphUnion_test.TestMakeConnected) ... ERROR
+test_two_computers_no_connection (GraphUnion_test.TestMakeConnected) ... ERROR
+test_two_disconnected_computers (GraphUnion_test.TestMakeConnected) ... ERROR
+
+Failed Test Cases Summary:
+- test_already_connected: Failed
+- test_completely_disconnected: Failed
+- test_example1: Failed
+- test_example2: Failed
+- test_example3: Failed
+- test_extra_cables: Failed
+- test_fully_connected: Failed
+- test_insufficient_cables: Failed
+- test_large_network_multiple_redundant_connections: Failed
+- test_network_fully_connected_no_extra_cables: Failed
+- test_no_computers: Failed
+- test_no_connections: Failed
+- test_single_computer: Failed
+- test_single_extra_cable_needed: Failed
+- test_two_components_need_two_cables: Failed
+- test_two_computers_no_connection: Failed
+- test_two_disconnected_computers: Failed
+----------------------------------------------------------------------
+Ran 17 tests in 0.017s
+
+FAILED (errors=17)
+
+Summary:
+Total tests run: 17
+Passed tests: 0
+Failed tests: 17
+Pass percentage: 0.00%
+
+Test: Time 
+Average running time over 100 runs: 0.01233961 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.66 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of GraphUnion.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+GraphUnion.py
+    F 4:0 makeConnected - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (7.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+GraphUnion.py:
+    h1: 4
+    h2: 12
+    N1: 7
+    N2: 13
+    vocabulary: 16
+    length: 20
+    calculated_length: 51.01955000865388
+    volume: 80.0
+    difficulty: 2.1666666666666665
+    effort: 173.33333333333331
+    time: 9.629629629629628
+    bugs: 0.02666666666666667
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+GraphUnion.py
+    LOC: 26
+    LLOC: 17
+    SLOC: 17
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 9
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+GraphUnion.py - A (58.89)
+=====================================
+
+Test: Style 
+************* Module GraphUnion
+GraphUnion.py:26:0: C0304: Final newline missing (missing-final-newline)
+GraphUnion.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+GraphUnion.py:1:0: C0103: Module name "GraphUnion" doesn't conform to snake_case naming style (invalid-name)
+GraphUnion.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+GraphUnion.py:4:0: C0103: Function name "makeConnected" doesn't conform to snake_case naming style (invalid-name)
+GraphUnion.py:10:9: E0602: Undefined variable 'UnionFind' (undefined-variable)
+
+------------------------------------------------------------------
+Your code has been rated at 4.12/10 (previous run: 6.50/10, -2.38)
+

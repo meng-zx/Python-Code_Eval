@@ -1,7 +1,8 @@
-watsonx 3 MedianSortedArray 
+watsonx 2 MedianSortedArray 
 
 Test: QA 
 test_both_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
+test_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... ok
 test_empty_first_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
 test_empty_second_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
 test_example1 (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
@@ -16,21 +17,21 @@ Failed Test Cases Summary:
 - test_empty_second_array: Failed
 - test_example1: Failed
 ----------------------------------------------------------------------
-Ran 6 tests in 0.014s
+Ran 7 tests in 0.013s
 
 FAILED (failures=2, errors=4)
 
 Summary:
-Total tests run: 6
-Passed tests: 0
+Total tests run: 7
+Passed tests: 1
 Failed tests: 6
-Pass percentage: 0.00%
+Pass percentage: 14.29%
 
 Test: Time 
-Average running time over 1000 runs: 0.00832096 seconds
+Average running time over 100 runs: 0.00901187 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 39.22 MiB
+Average memory usage over 100 runs: 39.29 MiB
 
 Test: Maintainability 
 =======================================

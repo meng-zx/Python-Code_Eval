@@ -1,19 +1,15 @@
-GPT4 2 SwimInWater 
+Claude 2 SwimInWater 
 
 Test: QA 
 test_all_same_values (SwimInWater_test.TestSwimInWater) ... ok
-test_checkerboard_pattern_large (SwimInWater_test.TestSwimInWater) ... ok
 test_checkerboard_pattern_small (SwimInWater_test.TestSwimInWater) ... ok
 test_decreasing_spiral (SwimInWater_test.TestSwimInWater) ... ok
 test_diagonal_increasing (SwimInWater_test.TestSwimInWater) ... ok
 test_example_1 (SwimInWater_test.TestSwimInWater) ... ok
-test_example_2 (SwimInWater_test.TestSwimInWater) ... ok
-test_grid_with_extremes (SwimInWater_test.TestSwimInWater) ... ERROR
-test_grid_with_large_numbers (SwimInWater_test.TestSwimInWater) ... FAIL
+test_example_2 (SwimInWater_test.TestSwimInWater) ... FAIL
 test_grid_with_maximum_value (SwimInWater_test.TestSwimInWater) ... ok
 test_grid_with_zeros (SwimInWater_test.TestSwimInWater) ... FAIL
 test_increasing_spiral (SwimInWater_test.TestSwimInWater) ... FAIL
-test_large_grid_decreasing (SwimInWater_test.TestSwimInWater) ... FAIL
 test_large_grid_linear_increase (SwimInWater_test.TestSwimInWater) ... FAIL
 test_large_grid_with_holes (SwimInWater_test.TestSwimInWater) ... ok
 test_large_values (SwimInWater_test.TestSwimInWater) ... ok
@@ -22,34 +18,31 @@ test_non_uniform_grid (SwimInWater_test.TestSwimInWater) ... ok
 test_random_pattern_large (SwimInWater_test.TestSwimInWater) ... FAIL
 test_single_element (SwimInWater_test.TestSwimInWater) ... ok
 test_snake_like_path (SwimInWater_test.TestSwimInWater) ... FAIL
-test_two_elements (SwimInWater_test.TestSwimInWater) ... FAIL
+test_two_elements (SwimInWater_test.TestSwimInWater) ... ok
 
 Failed Test Cases Summary:
-- test_grid_with_large_numbers: Failed
+- test_example_2: Failed
 - test_grid_with_zeros: Failed
 - test_increasing_spiral: Failed
-- test_large_grid_decreasing: Failed
 - test_large_grid_linear_increase: Failed
 - test_random_pattern_large: Failed
 - test_snake_like_path: Failed
-- test_two_elements: Failed
-- test_grid_with_extremes: Failed
 ----------------------------------------------------------------------
-Ran 22 tests in 0.026s
+Ran 18 tests in 0.008s
 
-FAILED (failures=8, errors=1)
+FAILED (failures=6)
 
 Summary:
-Total tests run: 22
-Passed tests: 13
-Failed tests: 9
-Pass percentage: 59.09%
+Total tests run: 18
+Passed tests: 12
+Failed tests: 6
+Pass percentage: 66.67%
 
 Test: Time 
-Average running time over 100 runs: 0.02240905 seconds
+Average running time over 100 runs: 0.00286583 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.94 MiB
+Average memory usage over 100 runs: 37.98 MiB
 
 Test: Maintainability 
 =======================================
@@ -60,61 +53,59 @@ Analyzing maintainability of SwimInWater.py
 Cyclomatic Complexity (CC)
 -------------------------------------
 SwimInWater.py
-    F 4:0 can_swim - B
-    F 23:0 swim_in_water - A
+    F 3:0 swim_in_water - A
 
-2 blocks (classes, functions, methods) analyzed.
-Average complexity: B (6.5)
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 SwimInWater.py:
-    h1: 10
-    h2: 29
-    N1: 23
-    N2: 43
-    vocabulary: 39
-    length: 66
-    calculated_length: 174.10072980757323
-    volume: 348.83654644490844
-    difficulty: 7.413793103448276
-    effort: 2586.2019822639763
-    time: 143.67788790355425
-    bugs: 0.11627884881496948
+    h1: 12
+    h2: 32
+    N1: 29
+    N2: 50
+    vocabulary: 44
+    length: 79
+    calculated_length: 203.01955000865388
+    volume: 431.2950978723465
+    difficulty: 9.375
+    effort: 4043.3915425532487
+    time: 224.63286347518047
+    bugs: 0.1437650326241155
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 SwimInWater.py
-    LOC: 34
-    LLOC: 26
-    SLOC: 26
-    Comments: 1
-    Single comments: 1
+    LOC: 41
+    LLOC: 31
+    SLOC: 31
+    Comments: 0
+    Single comments: 0
     Multi: 0
-    Blank: 7
+    Blank: 10
     - Comment Stats
-        (C % L): 3%
-        (C % S): 4%
-        (C + M % L): 3%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-SwimInWater.py - A (61.27)
+SwimInWater.py - A (48.62)
 =====================================
 
 Test: Style 
 ************* Module SwimInWater
 SwimInWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 SwimInWater.py:1:0: C0103: Module name "SwimInWater" doesn't conform to snake_case naming style (invalid-name)
-SwimInWater.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
-SwimInWater.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+SwimInWater.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.40/10 (previous run: 3.64/10, +4.76)
+Your code has been rated at 9.00/10 (previous run: 3.64/10, +5.36)
 

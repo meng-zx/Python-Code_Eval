@@ -1,34 +1,68 @@
-watsonx 10 SwimInWater 
+watsonx 2 SwimInWater 
 
 Test: QA 
+test_all_same_values (SwimInWater_test.TestSwimInWater) ... FAIL
+test_checkerboard_pattern_large (SwimInWater_test.TestSwimInWater) ... FAIL
+test_checkerboard_pattern_small (SwimInWater_test.TestSwimInWater) ... FAIL
+test_decreasing_spiral (SwimInWater_test.TestSwimInWater) ... FAIL
+test_diagonal_increasing (SwimInWater_test.TestSwimInWater) ... FAIL
 test_example_1 (SwimInWater_test.TestSwimInWater) ... FAIL
 test_example_2 (SwimInWater_test.TestSwimInWater) ... FAIL
-test_linear_increase (SwimInWater_test.TestSwimInWater) ... FAIL
-test_max_elevation (SwimInWater_test.TestSwimInWater) ... FAIL
-test_single_cell (SwimInWater_test.TestSwimInWater) ... FAIL
+test_grid_with_extremes (SwimInWater_test.TestSwimInWater) ... FAIL
+test_grid_with_large_numbers (SwimInWater_test.TestSwimInWater) ... FAIL
+test_grid_with_maximum_value (SwimInWater_test.TestSwimInWater) ... FAIL
+test_grid_with_zeros (SwimInWater_test.TestSwimInWater) ... FAIL
+test_increasing_spiral (SwimInWater_test.TestSwimInWater) ... FAIL
+test_large_grid_decreasing (SwimInWater_test.TestSwimInWater) ... FAIL
+test_large_grid_linear_increase (SwimInWater_test.TestSwimInWater) ... FAIL
+test_large_grid_with_holes (SwimInWater_test.TestSwimInWater) ... FAIL
+test_large_values (SwimInWater_test.TestSwimInWater) ... FAIL
+test_larger_grid (SwimInWater_test.TestSwimInWater) ... FAIL
+test_non_uniform_grid (SwimInWater_test.TestSwimInWater) ... FAIL
+test_random_pattern_large (SwimInWater_test.TestSwimInWater) ... FAIL
+test_single_element (SwimInWater_test.TestSwimInWater) ... FAIL
+test_snake_like_path (SwimInWater_test.TestSwimInWater) ... FAIL
+test_two_elements (SwimInWater_test.TestSwimInWater) ... FAIL
 
 Failed Test Cases Summary:
+- test_all_same_values: Failed
+- test_checkerboard_pattern_large: Failed
+- test_checkerboard_pattern_small: Failed
+- test_decreasing_spiral: Failed
+- test_diagonal_increasing: Failed
 - test_example_1: Failed
 - test_example_2: Failed
-- test_linear_increase: Failed
-- test_max_elevation: Failed
-- test_single_cell: Failed
+- test_grid_with_extremes: Failed
+- test_grid_with_large_numbers: Failed
+- test_grid_with_maximum_value: Failed
+- test_grid_with_zeros: Failed
+- test_increasing_spiral: Failed
+- test_large_grid_decreasing: Failed
+- test_large_grid_linear_increase: Failed
+- test_large_grid_with_holes: Failed
+- test_large_values: Failed
+- test_larger_grid: Failed
+- test_non_uniform_grid: Failed
+- test_random_pattern_large: Failed
+- test_single_element: Failed
+- test_snake_like_path: Failed
+- test_two_elements: Failed
 ----------------------------------------------------------------------
-Ran 5 tests in 0.004s
+Ran 22 tests in 0.015s
 
-FAILED (failures=5)
+FAILED (failures=22)
 
 Summary:
-Total tests run: 5
+Total tests run: 22
 Passed tests: 0
-Failed tests: 5
+Failed tests: 22
 Pass percentage: 0.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00198709 seconds
+Average running time over 100 runs: 0.00799199 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.58 MiB
+Average memory usage over 100 runs: 38.05 MiB
 
 Test: Maintainability 
 =======================================

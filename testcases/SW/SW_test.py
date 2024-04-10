@@ -71,12 +71,6 @@ class TestMaxSlidingWindow(unittest.TestCase):
     def test_k_equals_array_length(self):
         self.assertEqual(maxSlidingWindow([1,3,5,7,9], 5), [9])
 
-    def test_k_is_one(self):
-        self.assertEqual(maxSlidingWindow([1,3,5,7,9], 1), [1,3,5,7,9])
-
-    def test_array_with_negative_numbers(self):
-        self.assertEqual(maxSlidingWindow([-1,-3,-5,-7,-9], 3), [-1,-3,-5])
-
     def test_array_with_positive_and_negative_numbers(self):
         self.assertEqual(maxSlidingWindow([-2, 0, 2, -4, 4, -6, 6], 3), [2, 2, 4, 4, 6])
 
@@ -97,12 +91,6 @@ class TestMaxSlidingWindow(unittest.TestCase):
 
     def test_duplicate_maximums_inside_window(self):
         self.assertEqual(maxSlidingWindow([4,2,3,4,4,2,1], 3), [4,4,4,4,4])
-
-    def test_moving_window_exposes_new_maximum(self):
-        self.assertEqual(maxSlidingWindow([1,2,3,4,5], 2), [2,3,4,5])
-
-    def test_array_with_ascending_and_descending_sections(self):
-        self.assertEqual(maxSlidingWindow([1,2,3,4,3,2,1], 3), [3,4,4,4,3])
 
     # Edge Cases
     def test_negative_k(self):

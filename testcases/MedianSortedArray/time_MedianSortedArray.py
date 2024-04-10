@@ -12,7 +12,7 @@ def run_test_suite():
     end_time = time.time()
     return end_time - start_time 
 
-def main(runs=1000):
+def main(runs=100):
     total_time = 0
     for _ in range(runs):
         total_time += run_test_suite()

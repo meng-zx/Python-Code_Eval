@@ -1,26 +1,55 @@
-watsonx 4 LIS 
+watsonx 3 LIS 
 
 Test: QA 
-test_edge_cases (LIS_test.TestLongestIncreasingSubsequence) ... ok
-test_example_cases (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_all_negative_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_all_same_elements_except_one (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_alternating_sequence (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_decreasing_sequence (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_empty_list (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_example_1 (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_example_2 (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_example_3 (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_increasing_and_decreasing_sequence (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_large_input (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_large_input_reverse (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_mixed_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_negative_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_non_consecutive_increases (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_one_long_increasing_sequence_amidst_decreasing (LIS_test.TestLongestIncreasingSubsequence) ... FAIL
+test_random_case_1 (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_random_case_2 (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_random_case_with_negatives (LIS_test.TestLongestIncreasingSubsequence) ... FAIL
+test_random_case_with_zeros (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_repeating_elements_at_end (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_repeating_elements_at_start (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_sequence_with_alternating_large_small_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_sequence_with_duplicates_and_increases (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_sequence_with_large_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_sequence_with_one_increasing_element (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_single_element (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_two_elements_decreasing (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_two_elements_increasing (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_very_large_input (LIS_test.TestLongestIncreasingSubsequence) ... ok
 
 Failed Test Cases Summary:
+- test_one_long_increasing_sequence_amidst_decreasing: Failed
+- test_random_case_with_negatives: Failed
 ----------------------------------------------------------------------
-Ran 2 tests in 0.000s
+Ran 29 tests in 0.412s
 
-OK
+FAILED (failures=2)
 
 Summary:
-Total tests run: 2
-Passed tests: 2
-Failed tests: 0
-Pass percentage: 100.00%
+Total tests run: 29
+Passed tests: 27
+Failed tests: 2
+Pass percentage: 93.10%
 
 Test: Time 
-Average running time over 1000 runs: 0.00004135 seconds
+Average running time over 100 runs: 0.39358888 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.67 MiB
+Average memory usage over 100 runs: 38.20 MiB
 
 Test: Maintainability 
 =======================================

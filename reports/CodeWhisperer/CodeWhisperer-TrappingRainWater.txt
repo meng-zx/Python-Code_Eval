@@ -1,4 +1,4 @@
-GPT4 0 TrappingRainWater 
+CodeWhisperer 0 TrappingRainWater 
 
 Test: QA 
 test_all_same_height (TrappingRainWater_test.TestWaterTrap)
@@ -18,8 +18,8 @@ Test with heights descending then ascending ... FAIL
 test_dips_on_edges (TrappingRainWater_test.TestWaterTrap)
 Test with dips on both edges ... ok
 test_empty (TrappingRainWater_test.TestWaterTrap)
-Test with an empty array ... ok
-test_empty_list (TrappingRainWater_test.TestWaterTrap) ... ok
+Test with an empty array ... ERROR
+test_empty_list (TrappingRainWater_test.TestWaterTrap) ... ERROR
 test_example1 (TrappingRainWater_test.TestWaterTrap) ... ok
 test_example2 (TrappingRainWater_test.TestWaterTrap) ... ok
 test_example_1 (TrappingRainWater_test.TestWaterTrap) ... ok
@@ -94,23 +94,25 @@ Failed Test Cases Summary:
 - test_negative_heights: Failed
 - test_random_distribution: Failed
 - test_rapid_altitude_changes: Failed
+- test_empty: Failed
+- test_empty_list: Failed
 - test_random_heights: Failed
 ----------------------------------------------------------------------
-Ran 47 tests in 0.024s
+Ran 47 tests in 0.033s
 
-FAILED (failures=12, errors=1)
+FAILED (failures=12, errors=3)
 
 Summary:
 Total tests run: 47
-Passed tests: 34
-Failed tests: 13
-Pass percentage: 72.34%
+Passed tests: 32
+Failed tests: 15
+Pass percentage: 68.09%
 
 Test: Time 
-Average running time over 100 runs: 0.01003031 seconds
+Average running time over 100 runs: 0.02110961 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.33 MiB
+Average memory usage over 100 runs: 38.77 MiB
 
 Test: Maintainability 
 =======================================
@@ -124,7 +126,7 @@ TrappingRainWater.py
     F 1:0 trap_water - A
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: A (5.0)
+Average complexity: A (4.0)
 =====================================
 
 =====================================
@@ -132,49 +134,49 @@ Halstead Metrics
 -------------------------------------
 TrappingRainWater.py:
     h1: 4
-    h2: 15
+    h2: 10
     N1: 11
-    N2: 22
-    vocabulary: 19
-    length: 33
-    calculated_length: 66.60335893412778
-    volume: 140.1816079436383
-    difficulty: 2.933333333333333
-    effort: 411.199383301339
-    time: 22.844410183407724
-    bugs: 0.04672720264787944
+    N2: 20
+    vocabulary: 14
+    length: 31
+    calculated_length: 41.219280948873624
+    volume: 118.02800258378572
+    difficulty: 4.0
+    effort: 472.1120103351429
+    time: 26.22844501861905
+    bugs: 0.039342667527928574
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 TrappingRainWater.py
-    LOC: 23
-    LLOC: 18
-    SLOC: 18
-    Comments: 5
-    Single comments: 2
+    LOC: 19
+    LLOC: 14
+    SLOC: 14
+    Comments: 0
+    Single comments: 0
     Multi: 0
-    Blank: 3
+    Blank: 5
     - Comment Stats
-        (C % L): 22%
-        (C % S): 28%
-        (C + M % L): 22%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-TrappingRainWater.py - A (82.87)
+TrappingRainWater.py - A (59.95)
 =====================================
 
 Test: Style 
 ************* Module TrappingRainWater
-TrappingRainWater.py:23:0: C0305: Trailing newlines (trailing-newlines)
+TrappingRainWater.py:19:0: C0305: Trailing newlines (trailing-newlines)
 TrappingRainWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 TrappingRainWater.py:1:0: C0103: Module name "TrappingRainWater" doesn't conform to snake_case naming style (invalid-name)
 TrappingRainWater.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.33/10 (previous run: 2.50/10, +4.83)
+Your code has been rated at 7.14/10 (previous run: 2.50/10, +4.64)
 

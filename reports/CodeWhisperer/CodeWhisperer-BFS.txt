@@ -1,0 +1,107 @@
+CodeWhisperer 4 BFS 
+
+Test: QA 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/qa_BFS.py", line 2, in <module>
+    from BFS_test import TestFindWords as test_class # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Time 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/time_BFS.py", line 4, in <module>
+    from BFS_test import TestFindWords as test_class  # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Memory 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/memory_BFS.py", line 5, in <module>
+    from BFS_test import TestFindWords as test_class  # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of BFS.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+BFS.py
+    F 1:0 search - C
+    F 18:0 findWords - B
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: B (9.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+BFS.py:
+    h1: 9
+    h2: 26
+    N1: 19
+    N2: 44
+    vocabulary: 35
+    length: 63
+    calculated_length: 150.74075768464922
+    volume: 323.1448300675329
+    difficulty: 7.615384615384615
+    effort: 2460.8721674373655
+    time: 136.71512041318698
+    bugs: 0.10771494335584429
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+BFS.py
+    LOC: 30
+    LLOC: 19
+    SLOC: 22
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+BFS.py - A (52.25)
+=====================================
+
+Test: Style 
+************* Module BFS
+BFS.py:5:0: C0301: Line too long (110/100) (line-too-long)
+BFS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+BFS.py:1:0: C0103: Module name "BFS" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+BFS.py:1:0: R0913: Too many arguments (6/5) (too-many-arguments)
+BFS.py:5:7: R0916: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
+BFS.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+BFS.py:18:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:18:21: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:18:26: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:18:45: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:18:59: E0602: Undefined variable 'List' (undefined-variable)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)
+

@@ -1,4 +1,4 @@
-GPT4 1 RPN 
+CodeWhisperer 1 RPN 
 
 Test: QA 
 test_division (RPN_test.TestEvalRPN) ... ok
@@ -36,10 +36,10 @@ Failed tests: 4
 Pass percentage: 76.47%
 
 Test: Time 
-Average running time over 100 runs: 0.00192923 seconds
+Average running time over 100 runs: 0.00247978 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.56 MiB
+Average memory usage over 100 runs: 37.80 MiB
 
 Test: Maintainability 
 =======================================
@@ -50,51 +50,51 @@ Analyzing maintainability of RPN.py
 Cyclomatic Complexity (CC)
 -------------------------------------
 RPN.py
-    F 1:0 evalRPN - B
+    F 1:0 evalRPN - A
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: B (7.0)
+Average complexity: A (3.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 RPN.py:
-    h1: 6
-    h2: 8
-    N1: 9
-    N2: 18
-    vocabulary: 14
-    length: 27
-    calculated_length: 39.50977500432694
-    volume: 102.7985828955553
-    difficulty: 6.75
-    effort: 693.8904345449982
-    time: 38.54946858583324
-    bugs: 0.03426619429851843
+    h1: 5
+    h2: 4
+    N1: 5
+    N2: 10
+    vocabulary: 9
+    length: 15
+    calculated_length: 19.60964047443681
+    volume: 47.548875021634686
+    difficulty: 6.25
+    effort: 297.1804688852168
+    time: 16.51002604917871
+    bugs: 0.01584962500721156
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 RPN.py
-    LOC: 17
-    LLOC: 16
-    SLOC: 16
-    Comments: 1
-    Single comments: 1
+    LOC: 21
+    LLOC: 14
+    SLOC: 18
+    Comments: 0
+    Single comments: 0
     Multi: 0
-    Blank: 0
+    Blank: 3
     - Comment Stats
-        (C % L): 6%
-        (C % S): 6%
-        (C + M % L): 6%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-RPN.py - A (73.18)
+RPN.py - A (62.85)
 =====================================
 
 Test: Style 
@@ -105,5 +105,5 @@ RPN.py:1:0: C0116: Missing function or method docstring (missing-function-docstr
 RPN.py:1:0: C0103: Function name "evalRPN" doesn't conform to snake_case naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.33/10 (previous run: 2.63/10, +4.70)
+Your code has been rated at 6.67/10 (previous run: 2.63/10, +4.04)
 

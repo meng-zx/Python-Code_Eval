@@ -1,37 +1,51 @@
-watsonx 5 BFS 
+watsonx 4 BFS 
 
 Test: QA 
+test_all_cells_same_letter (BFS_test.TestFindWords) ... FAIL
 test_diagonal_non_adjacent (BFS_test.TestFindWords) ... FAIL
+test_diagonal_words_not_allowed (BFS_test.TestFindWords) ... FAIL
 test_empty_board (BFS_test.TestFindWords) ... FAIL
 test_empty_words (BFS_test.TestFindWords) ... ok
 test_example1 (BFS_test.TestFindWords) ... FAIL
 test_example2 (BFS_test.TestFindWords) ... FAIL
+test_large_case_with_sparse_words (BFS_test.TestFindWords) ... FAIL
 test_large_input (BFS_test.TestFindWords) ... FAIL
+test_multiple_words_formed_from_same_path (BFS_test.TestFindWords) ... FAIL
 test_single_character_board_and_word (BFS_test.TestFindWords) ... ERROR
+test_single_row_or_column_board (BFS_test.TestFindWords) ... FAIL
+test_word_subset_of_another (BFS_test.TestFindWords) ... FAIL
+test_words_with_nonexistent_letters (BFS_test.TestFindWords) ... FAIL
 
 Failed Test Cases Summary:
+- test_all_cells_same_letter: Failed
 - test_diagonal_non_adjacent: Failed
+- test_diagonal_words_not_allowed: Failed
 - test_empty_board: Failed
 - test_example1: Failed
 - test_example2: Failed
+- test_large_case_with_sparse_words: Failed
 - test_large_input: Failed
+- test_multiple_words_formed_from_same_path: Failed
+- test_single_row_or_column_board: Failed
+- test_word_subset_of_another: Failed
+- test_words_with_nonexistent_letters: Failed
 - test_single_character_board_and_word: Failed
 ----------------------------------------------------------------------
-Ran 7 tests in 0.006s
+Ran 14 tests in 0.009s
 
-FAILED (failures=5, errors=1)
+FAILED (failures=12, errors=1)
 
 Summary:
-Total tests run: 7
+Total tests run: 14
 Passed tests: 1
-Failed tests: 6
-Pass percentage: 14.29%
+Failed tests: 13
+Pass percentage: 7.14%
 
 Test: Time 
-Average running time over 1000 runs: 0.00268610 seconds
+Average running time over 100 runs: 0.00559887 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.83 MiB
+Average memory usage over 100 runs: 37.80 MiB
 
 Test: Maintainability 
 =======================================

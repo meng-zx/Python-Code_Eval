@@ -1,4 +1,4 @@
-GPT4 0 SW 
+CodeWhisperer 0 SW 
 
 Test: QA 
 test_all_elements_same (SW_test.TestMaxSlidingWindow) ... ok
@@ -11,7 +11,7 @@ test_duplicate_maximums_inside_window (SW_test.TestMaxSlidingWindow) ... ok
 test_example1 (SW_test.TestMaxSlidingWindow) ... ok
 test_increasing_order (SW_test.TestMaxSlidingWindow) ... ok
 test_k_equals_array_length (SW_test.TestMaxSlidingWindow) ... ok
-test_k_is_zero (SW_test.TestMaxSlidingWindow) ... FAIL
+test_k_is_zero (SW_test.TestMaxSlidingWindow) ... ERROR
 test_large_array (SW_test.TestMaxSlidingWindow) ... ok
 test_large_k (SW_test.TestMaxSlidingWindow) ... ok
 test_mixed_positive_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
@@ -25,15 +25,15 @@ test_window_size_two (SW_test.TestMaxSlidingWindow) ... ok
 test_zeros_in_array (SW_test.TestMaxSlidingWindow) ... FAIL
 
 Failed Test Cases Summary:
-- test_k_is_zero: Failed
 - test_mixed_positive_negative_numbers: Failed
 - test_negative_k: Failed
 - test_random_order_array: Failed
 - test_zeros_in_array: Failed
+- test_k_is_zero: Failed
 ----------------------------------------------------------------------
-Ran 22 tests in 0.019s
+Ran 22 tests in 0.020s
 
-FAILED (failures=5)
+FAILED (failures=4, errors=1)
 
 Summary:
 Total tests run: 22
@@ -42,10 +42,10 @@ Failed tests: 5
 Pass percentage: 77.27%
 
 Test: Time 
-Average running time over 100 runs: 0.01823102 seconds
+Average running time over 100 runs: 0.01534074 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 42.90 MiB
+Average memory usage over 100 runs: 42.33 MiB
 
 Test: Maintainability 
 =======================================
@@ -59,7 +59,7 @@ SW.py
     F 4:0 maxSlidingWindow - B
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: B (7.0)
+Average complexity: B (6.0)
 =====================================
 
 =====================================
@@ -67,40 +67,40 @@ Halstead Metrics
 -------------------------------------
 SW.py:
     h1: 6
-    h2: 12
-    N1: 9
-    N2: 17
-    vocabulary: 18
-    length: 26
-    calculated_length: 58.52932501298082
-    volume: 108.41805003750011
-    difficulty: 4.25
-    effort: 460.77671265937545
-    time: 25.598706258854193
-    bugs: 0.036139350012500036
+    h2: 10
+    N1: 7
+    N2: 13
+    vocabulary: 16
+    length: 20
+    calculated_length: 48.72905595320056
+    volume: 80.0
+    difficulty: 3.9
+    effort: 312.0
+    time: 17.333333333333332
+    bugs: 0.02666666666666667
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 SW.py
-    LOC: 26
+    LOC: 20
     LLOC: 13
     SLOC: 13
-    Comments: 6
-    Single comments: 6
+    Comments: 0
+    Single comments: 0
     Multi: 0
     Blank: 7
     - Comment Stats
-        (C % L): 23%
-        (C % S): 46%
-        (C + M % L): 23%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-SW.py - A (89.36)
+SW.py - A (61.57)
 =====================================
 
 Test: Style 
@@ -109,7 +109,8 @@ SW.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 SW.py:1:0: C0103: Module name "SW" doesn't conform to snake_case naming style (invalid-name)
 SW.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
 SW.py:4:0: C0103: Function name "maxSlidingWindow" doesn't conform to snake_case naming style (invalid-name)
+SW.py:8:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.92/10 (previous run: 6.00/10, +0.92)
+Your code has been rated at 6.15/10 (previous run: 6.00/10, +0.15)
 

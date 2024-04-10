@@ -1,11 +1,11 @@
-GPT4 3 LIS 
+CodeWhisperer 3 LIS 
 
 Test: QA 
 test_all_negative_numbers (LIS_test.TestLongestIncreasingSubsequence) ... ok
 test_all_same_elements_except_one (LIS_test.TestLongestIncreasingSubsequence) ... ok
 test_alternating_sequence (LIS_test.TestLongestIncreasingSubsequence) ... ok
 test_decreasing_sequence (LIS_test.TestLongestIncreasingSubsequence) ... ok
-test_empty_list (LIS_test.TestLongestIncreasingSubsequence) ... ok
+test_empty_list (LIS_test.TestLongestIncreasingSubsequence) ... ERROR
 test_example_1 (LIS_test.TestLongestIncreasingSubsequence) ... ok
 test_example_2 (LIS_test.TestLongestIncreasingSubsequence) ... ok
 test_example_3 (LIS_test.TestLongestIncreasingSubsequence) ... ok
@@ -34,22 +34,23 @@ test_very_large_input (LIS_test.TestLongestIncreasingSubsequence) ... ok
 Failed Test Cases Summary:
 - test_one_long_increasing_sequence_amidst_decreasing: Failed
 - test_random_case_with_negatives: Failed
+- test_empty_list: Failed
 ----------------------------------------------------------------------
-Ran 29 tests in 0.009s
+Ran 29 tests in 0.412s
 
-FAILED (failures=2)
+FAILED (failures=2, errors=1)
 
 Summary:
 Total tests run: 29
-Passed tests: 27
-Failed tests: 2
-Pass percentage: 93.10%
+Passed tests: 26
+Failed tests: 3
+Pass percentage: 89.66%
 
 Test: Time 
-Average running time over 100 runs: 0.00389554 seconds
+Average running time over 100 runs: 0.39275214 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.79 MiB
+Average memory usage over 100 runs: 38.11 MiB
 
 Test: Maintainability 
 =======================================
@@ -70,51 +71,50 @@ Average complexity: A (5.0)
 Halstead Metrics
 -------------------------------------
 LIS.py:
-    h1: 4
-    h2: 9
+    h1: 5
+    h2: 11
     N1: 6
     N2: 12
-    vocabulary: 13
+    vocabulary: 16
     length: 18
-    calculated_length: 36.52932501298081
-    volume: 66.60791492653966
-    difficulty: 2.6666666666666665
-    effort: 177.62110647077242
-    time: 9.867839248376246
-    bugs: 0.022202638308846556
+    calculated_length: 49.663388279447084
+    volume: 72.0
+    difficulty: 2.727272727272727
+    effort: 196.36363636363635
+    time: 10.909090909090908
+    bugs: 0.024
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 LIS.py
-    LOC: 17
-    LLOC: 15
-    SLOC: 15
-    Comments: 7
-    Single comments: 2
+    LOC: 10
+    LLOC: 8
+    SLOC: 8
+    Comments: 0
+    Single comments: 0
     Multi: 0
-    Blank: 0
+    Blank: 2
     - Comment Stats
-        (C % L): 41%
-        (C % S): 47%
-        (C + M % L): 41%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-LIS.py - A (89.79)
+LIS.py - A (66.62)
 =====================================
 
 Test: Style 
 ************* Module LIS
-LIS.py:17:0: C0301: Line too long (101/100) (line-too-long)
 LIS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 LIS.py:1:0: C0103: Module name "LIS" doesn't conform to snake_case naming style (invalid-name)
 LIS.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 LIS.py:1:0: C0103: Function name "lengthOfLIS" doesn't conform to snake_case naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.15/10 (previous run: 6.00/10, +0.15)
+Your code has been rated at 5.00/10 (previous run: 6.00/10, -1.00)
 

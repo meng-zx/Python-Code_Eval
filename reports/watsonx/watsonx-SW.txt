@@ -1,39 +1,64 @@
-watsonx 6 SW 
+watsonx 0 SW 
 
 Test: QA 
+test_all_elements_same (SW_test.TestMaxSlidingWindow) ... ok
 test_all_equal_elements (SW_test.TestMaxSlidingWindow) ... FAIL
+test_array_as_none (SW_test.TestMaxSlidingWindow) ... ok
+test_array_with_positive_and_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_decreasing_order (SW_test.TestMaxSlidingWindow) ... FAIL
 test_descending_and_ascending_order (SW_test.TestMaxSlidingWindow) ... FAIL
+test_duplicate_maximums_inside_window (SW_test.TestMaxSlidingWindow) ... FAIL
 test_example1 (SW_test.TestMaxSlidingWindow) ... FAIL
+test_increasing_order (SW_test.TestMaxSlidingWindow) ... ok
+test_k_equals_array_length (SW_test.TestMaxSlidingWindow) ... FAIL
+test_k_is_zero (SW_test.TestMaxSlidingWindow) ... FAIL
+test_large_array (SW_test.TestMaxSlidingWindow) ... FAIL
+test_large_k (SW_test.TestMaxSlidingWindow) ... FAIL
 test_mixed_positive_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_negative_k (SW_test.TestMaxSlidingWindow) ... FAIL
 test_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_random_order_array (SW_test.TestMaxSlidingWindow) ... FAIL
 test_single_element (SW_test.TestMaxSlidingWindow) ... ok
 test_window_size_equals_array_length (SW_test.TestMaxSlidingWindow) ... FAIL
 test_window_size_one (SW_test.TestMaxSlidingWindow) ... FAIL
+test_window_size_two (SW_test.TestMaxSlidingWindow) ... FAIL
+test_zeros_in_array (SW_test.TestMaxSlidingWindow) ... FAIL
 
 Failed Test Cases Summary:
 - test_all_equal_elements: Failed
+- test_array_with_positive_and_negative_numbers: Failed
+- test_decreasing_order: Failed
 - test_descending_and_ascending_order: Failed
+- test_duplicate_maximums_inside_window: Failed
 - test_example1: Failed
+- test_k_equals_array_length: Failed
+- test_k_is_zero: Failed
+- test_large_array: Failed
+- test_large_k: Failed
 - test_mixed_positive_negative_numbers: Failed
+- test_negative_k: Failed
 - test_negative_numbers: Failed
+- test_random_order_array: Failed
 - test_window_size_equals_array_length: Failed
 - test_window_size_one: Failed
+- test_window_size_two: Failed
+- test_zeros_in_array: Failed
 ----------------------------------------------------------------------
-Ran 8 tests in 0.005s
+Ran 22 tests in 3.427s
 
-FAILED (failures=7)
+FAILED (failures=18)
 
 Summary:
-Total tests run: 8
-Passed tests: 1
-Failed tests: 7
-Pass percentage: 12.50%
+Total tests run: 22
+Passed tests: 4
+Failed tests: 18
+Pass percentage: 18.18%
 
 Test: Time 
-Average running time over 1000 runs: 0.00308365 seconds
+Average running time over 100 runs: 3.67751299 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.73 MiB
+Average memory usage over 100 runs: 57.91 MiB
 
 Test: Maintainability 
 =======================================

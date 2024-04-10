@@ -20,10 +20,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00005646 seconds
+Average running time over 1000 runs: 0.00005514 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.02 MiB
+Average memory usage over 100 runs: 37.72 MiB
 
 Test: Maintainability 
 =======================================

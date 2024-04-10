@@ -1,0 +1,103 @@
+Claude 4 BFS 
+
+Test: QA 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/qa_BFS.py", line 2, in <module>
+    from BFS_test import TestFindWords as test_class # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 2, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Time 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/time_BFS.py", line 4, in <module>
+    from BFS_test import TestFindWords as test_class  # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 2, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Memory 
+Traceback (most recent call last):
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/memory_BFS.py", line 5, in <module>
+    from BFS_test import TestFindWords as test_class  # Modify the file and class name
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
+    from BFS import findWords  # Import the function from your script
+  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 2, in <module>
+    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+NameError: name 'List' is not defined. Did you mean: 'list'?
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of BFS.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+BFS.py
+    F 2:0 findWords - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (8.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+BFS.py:
+    h1: 9
+    h2: 24
+    N1: 20
+    N2: 42
+    vocabulary: 33
+    length: 62
+    calculated_length: 138.56842503028858
+    volume: 312.7524354002241
+    difficulty: 7.875
+    effort: 2462.925428776765
+    time: 136.82919048759805
+    bugs: 0.1042508118000747
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+BFS.py
+    LOC: 31
+    LLOC: 24
+    SLOC: 24
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 7
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+BFS.py - A (51.34)
+=====================================
+
+Test: Style 
+************* Module BFS
+BFS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+BFS.py:1:0: C0103: Module name "BFS" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:2:0: C0116: Missing function or method docstring (missing-function-docstring)
+BFS.py:2:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:2:21: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:2:26: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:2:45: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:2:59: E0602: Undefined variable 'List' (undefined-variable)
+BFS.py:15:11: R0916: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+

@@ -1,33 +1,44 @@
-GPT4 5 BFS 
+GPT4 4 BFS 
 
 Test: QA 
+test_all_cells_same_letter (BFS_test.TestFindWords) ... FAIL
 test_diagonal_non_adjacent (BFS_test.TestFindWords) ... FAIL
+test_diagonal_words_not_allowed (BFS_test.TestFindWords) ... FAIL
 test_empty_board (BFS_test.TestFindWords) ... ok
 test_empty_words (BFS_test.TestFindWords) ... ok
 test_example1 (BFS_test.TestFindWords) ... ok
 test_example2 (BFS_test.TestFindWords) ... ok
+test_large_case_with_sparse_words (BFS_test.TestFindWords) ... FAIL
 test_large_input (BFS_test.TestFindWords) ... FAIL
+test_multiple_words_formed_from_same_path (BFS_test.TestFindWords) ... FAIL
 test_single_character_board_and_word (BFS_test.TestFindWords) ... ok
+test_single_row_or_column_board (BFS_test.TestFindWords) ... ok
+test_word_subset_of_another (BFS_test.TestFindWords) ... ok
+test_words_with_nonexistent_letters (BFS_test.TestFindWords) ... ok
 
 Failed Test Cases Summary:
+- test_all_cells_same_letter: Failed
 - test_diagonal_non_adjacent: Failed
+- test_diagonal_words_not_allowed: Failed
+- test_large_case_with_sparse_words: Failed
 - test_large_input: Failed
+- test_multiple_words_formed_from_same_path: Failed
 ----------------------------------------------------------------------
-Ran 7 tests in 0.013s
+Ran 14 tests in 0.017s
 
-FAILED (failures=2)
+FAILED (failures=6)
 
 Summary:
-Total tests run: 7
-Passed tests: 5
-Failed tests: 2
-Pass percentage: 71.43%
+Total tests run: 14
+Passed tests: 8
+Failed tests: 6
+Pass percentage: 57.14%
 
 Test: Time 
-Average running time over 1000 runs: 0.01245478 seconds
+Average running time over 100 runs: 0.01510838 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.85 MiB
+Average memory usage over 100 runs: 37.75 MiB
 
 Test: Maintainability 
 =======================================

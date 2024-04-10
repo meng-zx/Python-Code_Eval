@@ -1,4 +1,4 @@
-GPT4 1 RecArea 
+CodeWhisperer 1 RecArea 
 
 Test: QA 
 test_both_rectangles_as_points (RecArea_test.TestComputeArea) ... ok
@@ -39,10 +39,10 @@ Failed tests: 6
 Pass percentage: 66.67%
 
 Test: Time 
-Average running time over 100 runs: 0.00245342 seconds
+Average running time over 100 runs: 0.00246257 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.11 MiB
+Average memory usage over 100 runs: 37.53 MiB
 
 Test: Maintainability 
 =======================================
@@ -56,48 +56,48 @@ RecArea.py
     F 1:0 compute_area - A
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: A (1.0)
+Average complexity: A (3.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 RecArea.py:
-    h1: 3
-    h2: 22
-    N1: 11
-    N2: 22
-    vocabulary: 25
-    length: 33
-    calculated_length: 102.862383112184
-    volume: 153.24725426256592
-    difficulty: 1.5
-    effort: 229.8708813938489
-    time: 12.770604521880493
-    bugs: 0.05108241808752197
+    h1: 5
+    h2: 25
+    N1: 14
+    N2: 28
+    vocabulary: 30
+    length: 42
+    calculated_length: 127.70604521880493
+    volume: 206.0894050155578
+    difficulty: 2.8
+    effort: 577.0503340435617
+    time: 32.05835189130899
+    bugs: 0.06869646833851926
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 RecArea.py
-    LOC: 14
+    LOC: 10
     LLOC: 7
     SLOC: 7
-    Comments: 4
-    Single comments: 4
+    Comments: 0
+    Single comments: 0
     Multi: 0
     Blank: 3
     - Comment Stats
-        (C % L): 29%
-        (C % S): 57%
-        (C + M % L): 29%
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-RecArea.py - A (95.37)
+RecArea.py - A (64.96)
 =====================================
 
 Test: Style 

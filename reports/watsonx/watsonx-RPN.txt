@@ -1,36 +1,57 @@
-watsonx 2 RPN 
+watsonx 1 RPN 
 
 Test: QA 
 test_division (RPN_test.TestEvalRPN) ... ERROR
-test_example1 (RPN_test.TestEvalRPN) ... ERROR
-test_example2 (RPN_test.TestEvalRPN) ... ERROR
-test_example3 (RPN_test.TestEvalRPN) ... ERROR
+test_division_by_zero (RPN_test.TestEvalRPN) ... ERROR
+test_empty_tokens (RPN_test.TestEvalRPN) ... FAIL
+test_example_1 (RPN_test.TestEvalRPN) ... ERROR
+test_example_2 (RPN_test.TestEvalRPN) ... ERROR
+test_example_3 (RPN_test.TestEvalRPN) ... ERROR
+test_invalid_token (RPN_test.TestEvalRPN) ... ERROR
+test_large_expression (RPN_test.TestEvalRPN) ... ERROR
+test_large_numbers (RPN_test.TestEvalRPN) ... ERROR
+test_mixed_operators (RPN_test.TestEvalRPN) ... ERROR
 test_multiplication (RPN_test.TestEvalRPN) ... ERROR
+test_negative_numbers (RPN_test.TestEvalRPN) ... ERROR
 test_negative_result (RPN_test.TestEvalRPN) ... ERROR
+test_single_operand (RPN_test.TestEvalRPN) ... ok
+test_single_operator (RPN_test.TestEvalRPN) ... ERROR
+test_strange_case_1 (RPN_test.TestEvalRPN) ... ERROR
+test_strange_case_2 (RPN_test.TestEvalRPN) ... ERROR
 
 Failed Test Cases Summary:
+- test_empty_tokens: Failed
 - test_division: Failed
-- test_example1: Failed
-- test_example2: Failed
-- test_example3: Failed
+- test_division_by_zero: Failed
+- test_example_1: Failed
+- test_example_2: Failed
+- test_example_3: Failed
+- test_invalid_token: Failed
+- test_large_expression: Failed
+- test_large_numbers: Failed
+- test_mixed_operators: Failed
 - test_multiplication: Failed
+- test_negative_numbers: Failed
 - test_negative_result: Failed
+- test_single_operator: Failed
+- test_strange_case_1: Failed
+- test_strange_case_2: Failed
 ----------------------------------------------------------------------
-Ran 6 tests in 0.007s
+Ran 17 tests in 0.016s
 
-FAILED (errors=6)
+FAILED (failures=1, errors=15)
 
 Summary:
-Total tests run: 6
-Passed tests: 0
-Failed tests: 6
-Pass percentage: 0.00%
+Total tests run: 17
+Passed tests: 1
+Failed tests: 16
+Pass percentage: 5.88%
 
 Test: Time 
-Average running time over 1000 runs: 0.00429746 seconds
+Average running time over 100 runs: 0.01198022 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.66 MiB
+Average memory usage over 100 runs: 38.01 MiB
 
 Test: Maintainability 
 =======================================

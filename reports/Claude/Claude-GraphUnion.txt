@@ -1,4 +1,4 @@
-GPT4 0 GraphUnion 
+Claude 0 GraphUnion 
 
 Test: QA 
 test_already_connected (GraphUnion_test.TestMakeConnected) ... ok
@@ -33,10 +33,10 @@ Failed tests: 1
 Pass percentage: 94.12%
 
 Test: Time 
-Average running time over 100 runs: 0.00063870 seconds
+Average running time over 100 runs: 0.00066183 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.24 MiB
+Average memory usage over 100 runs: 38.15 MiB
 
 Test: Maintainability 
 =======================================
@@ -47,70 +47,60 @@ Analyzing maintainability of GraphUnion.py
 Cyclomatic Complexity (CC)
 -------------------------------------
 GraphUnion.py
-    F 27:0 makeConnected - B
-    M 12:4 UnionFind.union - A
-    C 1:0 UnionFind - A
-    M 6:4 UnionFind.find - A
-    M 2:4 UnionFind.__init__ - A
+    F 4:0 makeConnected - A
 
-5 blocks (classes, functions, methods) analyzed.
-Average complexity: A (3.2)
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (5.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 GraphUnion.py:
-    h1: 10
-    h2: 20
-    N1: 15
-    N2: 27
-    vocabulary: 30
-    length: 42
-    calculated_length: 119.65784284662087
-    volume: 206.0894050155578
-    difficulty: 6.75
-    effort: 1391.1034838550152
-    time: 77.28352688083417
-    bugs: 0.06869646833851926
+    h1: 6
+    h2: 9
+    N1: 7
+    N2: 13
+    vocabulary: 15
+    length: 20
+    calculated_length: 44.039100017307746
+    volume: 78.13781191217038
+    difficulty: 4.333333333333333
+    effort: 338.5971849527383
+    time: 18.810954719596573
+    bugs: 0.026045937304056792
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 GraphUnion.py
-    LOC: 40
-    LLOC: 32
-    SLOC: 32
-    Comments: 0
+    LOC: 28
+    LLOC: 21
+    SLOC: 21
+    Comments: 1
     Single comments: 0
     Multi: 0
-    Blank: 8
+    Blank: 7
     - Comment Stats
-        (C % L): 0%
-        (C % S): 0%
-        (C + M % L): 0%
+        (C % L): 4%
+        (C % S): 5%
+        (C + M % L): 4%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-GraphUnion.py - A (49.22)
+GraphUnion.py - A (70.01)
 =====================================
 
 Test: Style 
 ************* Module GraphUnion
-GraphUnion.py:40:0: C0304: Final newline missing (missing-final-newline)
 GraphUnion.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 GraphUnion.py:1:0: C0103: Module name "GraphUnion" doesn't conform to snake_case naming style (invalid-name)
-GraphUnion.py:1:0: C0115: Missing class docstring (missing-class-docstring)
-GraphUnion.py:6:4: C0116: Missing function or method docstring (missing-function-docstring)
-GraphUnion.py:12:4: C0116: Missing function or method docstring (missing-function-docstring)
-GraphUnion.py:13:8: C0103: Variable name "rootX" doesn't conform to snake_case naming style (invalid-name)
-GraphUnion.py:14:8: C0103: Variable name "rootY" doesn't conform to snake_case naming style (invalid-name)
-GraphUnion.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
-GraphUnion.py:27:0: C0103: Function name "makeConnected" doesn't conform to snake_case naming style (invalid-name)
+GraphUnion.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+GraphUnion.py:4:0: C0103: Function name "makeConnected" doesn't conform to snake_case naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.77/10 (previous run: 4.12/10, +2.66)
+Your code has been rated at 8.10/10 (previous run: 8.10/10, +0.00)
 

@@ -1,34 +1,47 @@
-watsonx 8 GraphUnion 
+watsonx 0 GraphUnion 
 
 Test: QA 
+test_already_connected (GraphUnion_test.TestMakeConnected) ... FAIL
+test_completely_disconnected (GraphUnion_test.TestMakeConnected) ... ok
 test_example1 (GraphUnion_test.TestMakeConnected) ... FAIL
 test_example2 (GraphUnion_test.TestMakeConnected) ... FAIL
 test_example3 (GraphUnion_test.TestMakeConnected) ... ok
 test_extra_cables (GraphUnion_test.TestMakeConnected) ... FAIL
 test_fully_connected (GraphUnion_test.TestMakeConnected) ... FAIL
+test_insufficient_cables (GraphUnion_test.TestMakeConnected) ... ok
+test_large_network_multiple_redundant_connections (GraphUnion_test.TestMakeConnected) ... FAIL
+test_network_fully_connected_no_extra_cables (GraphUnion_test.TestMakeConnected) ... FAIL
+test_no_computers (GraphUnion_test.TestMakeConnected) ... FAIL
 test_no_connections (GraphUnion_test.TestMakeConnected) ... ok
 test_single_computer (GraphUnion_test.TestMakeConnected) ... FAIL
+test_single_extra_cable_needed (GraphUnion_test.TestMakeConnected) ... ok
+test_two_components_need_two_cables (GraphUnion_test.TestMakeConnected) ... ok
+test_two_computers_no_connection (GraphUnion_test.TestMakeConnected) ... ok
 test_two_disconnected_computers (GraphUnion_test.TestMakeConnected) ... ok
 
 Failed Test Cases Summary:
+- test_already_connected: Failed
 - test_example1: Failed
 - test_example2: Failed
 - test_extra_cables: Failed
 - test_fully_connected: Failed
+- test_large_network_multiple_redundant_connections: Failed
+- test_network_fully_connected_no_extra_cables: Failed
+- test_no_computers: Failed
 - test_single_computer: Failed
 ----------------------------------------------------------------------
-Ran 8 tests in 0.004s
+Ran 17 tests in 0.007s
 
-FAILED (failures=5)
+FAILED (failures=9)
 
 Summary:
-Total tests run: 8
-Passed tests: 3
-Failed tests: 5
-Pass percentage: 37.50%
+Total tests run: 17
+Passed tests: 8
+Failed tests: 9
+Pass percentage: 47.06%
 
 Test: Time 
-Average running time over 1000 runs: 0.00210489 seconds
+Average running time over 100 runs: 0.00383738 seconds
 
 Test: Memory 
 Average memory usage over 100 runs: 37.85 MiB
