@@ -1,8 +1,8 @@
 #!/bin/bash
 
 report_dir="reports"
-model_names=("example" "GPT4") # put all model names here
-problem_names=("TwoSum" "TrappingRainWater" "RPN" "MedianSortedArray" "LIS" "BFS" "SW" "RecArea" "GraphUnion" "Graph2D") # put all problem names here
+model_names=("example" "GPT4" "watsonx") # put all model names here
+problem_names=("TwoSum" "TrappingRainWater" "RPN" "MedianSortedArray" "LIS" "BFS" "SW" "RecArea" "GraphUnion" "Graph2D" "SwimInWater") # put all problem names here
 
 
 for model_name in "${model_names[@]}"; do

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="BFS.py" # Modify the file name
+FILE="SwimInWater.py" # Modify the file name
 echo "======================================="
 echo "Analyzing maintainability of $FILE"
 echo "======================================="

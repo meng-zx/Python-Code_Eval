@@ -13,7 +13,7 @@ Failed Test Cases Summary:
 - test_diagonal_non_adjacent: Failed
 - test_large_input: Failed
 ----------------------------------------------------------------------
-Ran 7 tests in 0.083s
+Ran 7 tests in 0.014s
 
 FAILED (failures=2)
 
@@ -24,10 +24,10 @@ Failed tests: 2
 Pass percentage: 71.43%
 
 Test: Time 
-Average running time over 1000 runs: 0.05465528 seconds
+Average running time over 1000 runs: 0.01289223 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.90 MiB
+Average memory usage over 100 runs: 38.38 MiB
 
 Test: Maintainability 
 =======================================
@@ -97,6 +97,6 @@ BFS.py:4:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 BFS.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 BFS.py:10:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
 
-------------------------------------------------------------------
-Your code has been rated at 7.59/10 (previous run: 7.59/10, +0.00)
+-----------------------------------
+Your code has been rated at 7.59/10
 

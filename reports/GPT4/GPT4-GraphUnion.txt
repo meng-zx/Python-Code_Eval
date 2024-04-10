@@ -12,7 +12,7 @@ test_two_disconnected_computers (GraphUnion_test.TestMakeConnected) ... ok
 
 Failed Test Cases Summary:
 ----------------------------------------------------------------------
-Ran 8 tests in 0.007s
+Ran 8 tests in 0.001s
 
 OK
 
@@ -23,10 +23,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00046582 seconds
+Average running time over 1000 runs: 0.00009278 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.92 MiB
+Average memory usage over 100 runs: 38.00 MiB
 
 Test: Maintainability 
 =======================================

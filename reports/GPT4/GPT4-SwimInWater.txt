@@ -1,0 +1,96 @@
+GPT4 10 SwimInWater 
+
+Test: QA 
+test_example_1 (SwimInWater_test.TestSwimInWater) ... ok
+test_example_2 (SwimInWater_test.TestSwimInWater) ... ok
+test_linear_increase (SwimInWater_test.TestSwimInWater) ... FAIL
+test_max_elevation (SwimInWater_test.TestSwimInWater) ... ERROR
+test_single_cell (SwimInWater_test.TestSwimInWater) ... ok
+
+Failed Test Cases Summary:
+- test_linear_increase: Failed
+- test_max_elevation: Failed
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (failures=1, errors=1)
+
+Summary:
+Total tests run: 5
+Passed tests: 3
+Failed tests: 2
+Pass percentage: 60.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00124879 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.60 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of SwimInWater.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+SwimInWater.py
+    F 4:0 can_swim - B
+    F 23:0 swim_in_water - A
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: B (6.5)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+SwimInWater.py:
+    h1: 10
+    h2: 29
+    N1: 23
+    N2: 43
+    vocabulary: 39
+    length: 66
+    calculated_length: 174.10072980757323
+    volume: 348.83654644490844
+    difficulty: 7.413793103448276
+    effort: 2586.2019822639763
+    time: 143.67788790355425
+    bugs: 0.11627884881496948
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+SwimInWater.py
+    LOC: 34
+    LLOC: 26
+    SLOC: 26
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 7
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 4%
+        (C + M % L): 3%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+SwimInWater.py - A (61.27)
+=====================================
+
+Test: Style 
+************* Module SwimInWater
+SwimInWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+SwimInWater.py:1:0: C0103: Module name "SwimInWater" doesn't conform to snake_case naming style (invalid-name)
+SwimInWater.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+SwimInWater.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.40/10 (previous run: 8.40/10, +0.00)
+

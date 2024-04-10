@@ -14,7 +14,7 @@ Failed Test Cases Summary:
 - test_negative_coordinates: Failed
 - test_no_overlap: Failed
 ----------------------------------------------------------------------
-Ran 7 tests in 0.016s
+Ran 7 tests in 0.003s
 
 FAILED (failures=3)
 
@@ -25,10 +25,10 @@ Failed tests: 3
 Pass percentage: 57.14%
 
 Test: Time 
-Average running time over 1000 runs: 0.00479713 seconds
+Average running time over 1000 runs: 0.00122990 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.86 MiB
+Average memory usage over 100 runs: 37.74 MiB
 
 Test: Maintainability 
 =======================================
@@ -93,6 +93,6 @@ RecArea.py:1:0: C0103: Module name "RecArea" doesn't conform to snake_case namin
 RecArea.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 RecArea.py:1:0: R0913: Too many arguments (8/5) (too-many-arguments)
 
-------------------------------------------------------------------
-Your code has been rated at 4.29/10 (previous run: 4.29/10, +0.00)
+-----------------------------------
+Your code has been rated at 4.29/10
 
