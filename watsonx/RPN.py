@@ -1,17 +1,30 @@
 def evalRPN(tokens):
-    stack = []
+    # Initialize the result as 0
+    result = 0
+
+    # Iterate through the tokens
     for token in tokens:
-        if token in '+-*/':
-            b, a = stack.pop(), stack.pop()
+        # If the token is an integer, add it to the result
+        if token.isdigit():
+            result += int(token)
+
+        # If the token is an operator, perform the operation
+        elif token in {'+', '-', '*', '/'}:
+            # Get the operands
+            left = evaluate_expression(tokens[:token.index(' ')])
+            right = evaluate_expression(tokens[token.index(' ') + 1:])
+
+            # Perform the operation
             if token == '+':
-                stack.append(a + b)
+                result += left + right
             elif token == '-':
-                stack.append(a - b)
+                result -= left - right
             elif token == '*':
-                stack.append(a * b)
+                result *= left * right
             elif token == '/':
-                # Use int() to truncate towards zero
-                stack.append(int(a / b))
-        else:
-            stack.append(int(token))
-    return stack[0]
+                if right != 0:
+                    result = result // right
+                else:
+                    raise ValueError("Invalid division by zero")
+
+    return result

@@ -1,34 +1,37 @@
-GPT4 7 RecArea 
+watsonx 7 RecArea 
 
 Test: QA 
-test_complete_overlap (RecArea_test.TestComputeArea) ... ok
-test_contained (RecArea_test.TestComputeArea) ... ok
+test_complete_overlap (RecArea_test.TestComputeArea) ... FAIL
+test_contained (RecArea_test.TestComputeArea) ... FAIL
 test_corner_touching (RecArea_test.TestComputeArea) ... ok
 test_edge_touching (RecArea_test.TestComputeArea) ... FAIL
 test_negative_coordinates (RecArea_test.TestComputeArea) ... FAIL
 test_no_overlap (RecArea_test.TestComputeArea) ... FAIL
-test_overlap (RecArea_test.TestComputeArea) ... ok
+test_overlap (RecArea_test.TestComputeArea) ... FAIL
 
 Failed Test Cases Summary:
+- test_complete_overlap: Failed
+- test_contained: Failed
 - test_edge_touching: Failed
 - test_negative_coordinates: Failed
 - test_no_overlap: Failed
+- test_overlap: Failed
 ----------------------------------------------------------------------
 Ran 7 tests in 0.004s
 
-FAILED (failures=3)
+FAILED (failures=6)
 
 Summary:
 Total tests run: 7
-Passed tests: 4
-Failed tests: 3
-Pass percentage: 57.14%
+Passed tests: 1
+Failed tests: 6
+Pass percentage: 14.29%
 
 Test: Time 
-Average running time over 1000 runs: 0.00127145 seconds
+Average running time over 1000 runs: 0.00230298 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.86 MiB
+Average memory usage over 100 runs: 37.83 MiB
 
 Test: Maintainability 
 =======================================
@@ -50,40 +53,40 @@ Halstead Metrics
 -------------------------------------
 RecArea.py:
     h1: 3
-    h2: 22
-    N1: 11
-    N2: 22
-    vocabulary: 25
-    length: 33
-    calculated_length: 102.862383112184
-    volume: 153.24725426256592
+    h2: 14
+    N1: 7
+    N2: 14
+    vocabulary: 17
+    length: 21
+    calculated_length: 58.05785641096992
+    volume: 85.83671966625714
     difficulty: 1.5
-    effort: 229.8708813938489
-    time: 12.770604521880493
-    bugs: 0.05108241808752197
+    effort: 128.75507949938572
+    time: 7.153059972188095
+    bugs: 0.02861223988875238
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 RecArea.py
-    LOC: 14
-    LLOC: 7
-    SLOC: 7
-    Comments: 4
-    Single comments: 4
+    LOC: 13
+    LLOC: 8
+    SLOC: 8
+    Comments: 3
+    Single comments: 3
     Multi: 0
-    Blank: 3
+    Blank: 2
     - Comment Stats
-        (C % L): 29%
-        (C % S): 57%
-        (C + M % L): 29%
+        (C % L): 23%
+        (C % S): 38%
+        (C + M % L): 23%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-RecArea.py - A (95.37)
+RecArea.py - A (94.54)
 =====================================
 
 Test: Style 
@@ -94,5 +97,5 @@ RecArea.py:1:0: C0116: Missing function or method docstring (missing-function-do
 RecArea.py:1:0: R0913: Too many arguments (8/5) (too-many-arguments)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.29/10 (previous run: 4.29/10, +0.00)
+Your code has been rated at 5.00/10 (previous run: 4.29/10, +0.71)
 

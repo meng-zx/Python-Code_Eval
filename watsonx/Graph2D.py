@@ -1,22 +1,19 @@
 def longestIncreasingPath(matrix):
-    if not matrix or not matrix[0]:
-        return 0
+    # Initialize start and end points
+    start = (0, 0)
+    end = (m - 1, n - 1)
 
-    def dfs(x, y):
-        if memo[x][y]:
-            return memo[x][y]
-        length = 1
-        for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-            nx, ny = x + dx, y + dy
-            if 0 <= nx < m and 0 <= ny < n and matrix[nx][ny] > matrix[x][y]:
-                length = max(length, 1 + dfs(nx, ny))
-        memo[x][y] = length
-        return length
+    # Initialize current path length to 0
+    current_length = 0
 
-    m, n = len(matrix), len(matrix[0])
-    memo = [[0] * n for _ in range(m)]
-    max_length = 0
+    # Iterate through the rows and columns of the matrix
     for i in range(m):
         for j in range(n):
-            max_length = max(max_length, dfs(i, j))
-    return max_length
+            # If the current cell is not the start or end point, and it has not been visited before, update the current path length and mark it as visited
+            if (i, j) != start and (i, j) != end and matrix[i][j] < matrix[current_length][current_direction]:
+                current_length += 1
+                matrix[i][j] = matrix[current_length][current_direction]
+                start = (i, j)
+
+    # Return the length of the longest increasing path
+    return current_length

@@ -1,0 +1,103 @@
+watsonx 6 SW 
+
+Test: QA 
+test_all_equal_elements (SW_test.TestMaxSlidingWindow) ... FAIL
+test_descending_and_ascending_order (SW_test.TestMaxSlidingWindow) ... FAIL
+test_example1 (SW_test.TestMaxSlidingWindow) ... FAIL
+test_mixed_positive_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_negative_numbers (SW_test.TestMaxSlidingWindow) ... FAIL
+test_single_element (SW_test.TestMaxSlidingWindow) ... ok
+test_window_size_equals_array_length (SW_test.TestMaxSlidingWindow) ... FAIL
+test_window_size_one (SW_test.TestMaxSlidingWindow) ... FAIL
+
+Failed Test Cases Summary:
+- test_all_equal_elements: Failed
+- test_descending_and_ascending_order: Failed
+- test_example1: Failed
+- test_mixed_positive_negative_numbers: Failed
+- test_negative_numbers: Failed
+- test_window_size_equals_array_length: Failed
+- test_window_size_one: Failed
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+FAILED (failures=7)
+
+Summary:
+Total tests run: 8
+Passed tests: 1
+Failed tests: 7
+Pass percentage: 12.50%
+
+Test: Time 
+Average running time over 1000 runs: 0.00308365 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.73 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of SW.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+SW.py
+    F 2:0 maxSlidingWindow - A
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+SW.py:
+    h1: 3
+    h2: 7
+    N1: 6
+    N2: 12
+    vocabulary: 10
+    length: 18
+    calculated_length: 24.406371956566698
+    volume: 59.794705707972525
+    difficulty: 2.5714285714285716
+    effort: 153.75781467764364
+    time: 8.542100815424646
+    bugs: 0.019931568569324175
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+SW.py
+    LOC: 15
+    LLOC: 11
+    SLOC: 10
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 5
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+SW.py - A (64.44)
+=====================================
+
+Test: Style 
+************* Module SW
+SW.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+SW.py:1:0: C0103: Module name "SW" doesn't conform to snake_case naming style (invalid-name)
+SW.py:2:0: C0116: Missing function or method docstring (missing-function-docstring)
+SW.py:2:0: C0103: Function name "maxSlidingWindow" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 6.00/10 (previous run: 6.92/10, -0.92)
+

@@ -23,10 +23,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00644102 seconds
+Average running time over 1000 runs: 0.00661079 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 40.67 MiB
+Average memory usage over 100 runs: 40.65 MiB
 
 Test: Maintainability 
 =======================================
@@ -92,6 +92,6 @@ Graph2D.py:1:0: C0103: Module name "Graph2D" doesn't conform to snake_case namin
 Graph2D.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 Graph2D.py:1:0: C0103: Function name "longestIncreasingPath" doesn't conform to snake_case naming style (invalid-name)
 
------------------------------------
-Your code has been rated at 7.50/10
+------------------------------------------------------------------
+Your code has been rated at 7.50/10 (previous run: 0.00/10, +7.50)
 

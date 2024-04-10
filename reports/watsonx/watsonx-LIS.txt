@@ -1,4 +1,4 @@
-GPT4 4 LIS 
+watsonx 4 LIS 
 
 Test: QA 
 test_edge_cases (LIS_test.TestLongestIncreasingSubsequence) ... ok
@@ -17,7 +17,7 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00003815 seconds
+Average running time over 1000 runs: 0.00004135 seconds
 
 Test: Memory 
 Average memory usage over 100 runs: 37.67 MiB
@@ -31,28 +31,28 @@ Analyzing maintainability of LIS.py
 Cyclomatic Complexity (CC)
 -------------------------------------
 LIS.py
-    F 1:0 lengthOfLIS - A
+    F 1:0 lengthOfLIS - B
 
 1 blocks (classes, functions, methods) analyzed.
-Average complexity: A (5.0)
+Average complexity: B (6.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 LIS.py:
-    h1: 4
-    h2: 9
-    N1: 6
-    N2: 12
-    vocabulary: 13
-    length: 18
-    calculated_length: 36.52932501298081
-    volume: 66.60791492653966
-    difficulty: 2.6666666666666665
-    effort: 177.62110647077242
-    time: 9.867839248376246
-    bugs: 0.022202638308846556
+    h1: 6
+    h2: 12
+    N1: 7
+    N2: 13
+    vocabulary: 18
+    length: 20
+    calculated_length: 58.52932501298082
+    volume: 83.39850002884624
+    difficulty: 3.25
+    effort: 271.0451250937503
+    time: 15.05806250520835
+    bugs: 0.027799500009615414
 =====================================
 
 =====================================
@@ -60,32 +60,31 @@ Raw Metrics
 -------------------------------------
 LIS.py
     LOC: 17
-    LLOC: 15
-    SLOC: 15
-    Comments: 7
-    Single comments: 2
+    LLOC: 10
+    SLOC: 10
+    Comments: 3
+    Single comments: 3
     Multi: 0
-    Blank: 0
+    Blank: 4
     - Comment Stats
-        (C % L): 41%
-        (C % S): 47%
-        (C + M % L): 41%
+        (C % L): 18%
+        (C % S): 30%
+        (C + M % L): 18%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-LIS.py - A (89.79)
+LIS.py - A (90.43)
 =====================================
 
 Test: Style 
 ************* Module LIS
-LIS.py:17:0: C0301: Line too long (101/100) (line-too-long)
 LIS.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 LIS.py:1:0: C0103: Module name "LIS" doesn't conform to snake_case naming style (invalid-name)
 LIS.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 LIS.py:1:0: C0103: Function name "lengthOfLIS" doesn't conform to snake_case naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.15/10 (previous run: 6.00/10, +0.15)
+Your code has been rated at 6.00/10 (previous run: 6.15/10, -0.15)
 

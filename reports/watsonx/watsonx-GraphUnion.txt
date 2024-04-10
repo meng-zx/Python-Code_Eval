@@ -1,0 +1,104 @@
+watsonx 8 GraphUnion 
+
+Test: QA 
+test_example1 (GraphUnion_test.TestMakeConnected) ... FAIL
+test_example2 (GraphUnion_test.TestMakeConnected) ... FAIL
+test_example3 (GraphUnion_test.TestMakeConnected) ... ok
+test_extra_cables (GraphUnion_test.TestMakeConnected) ... FAIL
+test_fully_connected (GraphUnion_test.TestMakeConnected) ... FAIL
+test_no_connections (GraphUnion_test.TestMakeConnected) ... ok
+test_single_computer (GraphUnion_test.TestMakeConnected) ... FAIL
+test_two_disconnected_computers (GraphUnion_test.TestMakeConnected) ... ok
+
+Failed Test Cases Summary:
+- test_example1: Failed
+- test_example2: Failed
+- test_extra_cables: Failed
+- test_fully_connected: Failed
+- test_single_computer: Failed
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+FAILED (failures=5)
+
+Summary:
+Total tests run: 8
+Passed tests: 3
+Failed tests: 5
+Pass percentage: 37.50%
+
+Test: Time 
+Average running time over 1000 runs: 0.00210489 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.85 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of GraphUnion.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+GraphUnion.py
+    F 4:0 makeConnected - C
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: C (11.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+GraphUnion.py:
+    h1: 8
+    h2: 14
+    N1: 11
+    N2: 20
+    vocabulary: 22
+    length: 31
+    calculated_length: 77.30296890880645
+    volume: 138.24238017775622
+    difficulty: 5.714285714285714
+    effort: 789.956458158607
+    time: 43.88646989770039
+    bugs: 0.046080793392585404
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+GraphUnion.py
+    LOC: 30
+    LLOC: 21
+    SLOC: 21
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 9
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+GraphUnion.py - A (54.69)
+=====================================
+
+Test: Style 
+************* Module GraphUnion
+GraphUnion.py:30:0: C0304: Final newline missing (missing-final-newline)
+GraphUnion.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+GraphUnion.py:1:0: C0103: Module name "GraphUnion" doesn't conform to snake_case naming style (invalid-name)
+GraphUnion.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+GraphUnion.py:4:0: C0103: Function name "makeConnected" doesn't conform to snake_case naming style (invalid-name)
+GraphUnion.py:9:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+GraphUnion.py:27:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+
+------------------------------------------------------------------
+Your code has been rated at 6.50/10 (previous run: 6.77/10, -0.27)
+

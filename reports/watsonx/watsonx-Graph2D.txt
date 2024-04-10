@@ -1,0 +1,113 @@
+watsonx 9 Graph2D 
+
+Test: QA 
+test_descending_path (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_example1 (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_example2 (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_example3 (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_large_matrix (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_no_increasing_path (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_single_column (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+test_single_row (Graph2D_test.TestLongestIncreasingPath) ... ERROR
+
+Failed Test Cases Summary:
+- test_descending_path: Failed
+- test_example1: Failed
+- test_example2: Failed
+- test_example3: Failed
+- test_large_matrix: Failed
+- test_no_increasing_path: Failed
+- test_single_column: Failed
+- test_single_row: Failed
+----------------------------------------------------------------------
+Ran 8 tests in 0.009s
+
+FAILED (errors=8)
+
+Summary:
+Total tests run: 8
+Passed tests: 0
+Failed tests: 8
+Pass percentage: 0.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00599310 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 37.56 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of Graph2D.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+Graph2D.py
+    F 1:0 longestIncreasingPath - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (6.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+Graph2D.py:
+    h1: 5
+    h2: 13
+    N1: 7
+    N2: 15
+    vocabulary: 18
+    length: 22
+    calculated_length: 59.715356810271004
+    volume: 91.73835003173087
+    difficulty: 2.8846153846153846
+    effort: 264.6298558607621
+    time: 14.70165865893123
+    bugs: 0.030579450010576957
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+Graph2D.py
+    LOC: 19
+    LLOC: 11
+    SLOC: 11
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 3
+    - Comment Stats
+        (C % L): 26%
+        (C % S): 45%
+        (C + M % L): 26%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+Graph2D.py - A (91.53)
+=====================================
+
+Test: Style 
+************* Module Graph2D
+Graph2D.py:12:0: C0301: Line too long (154/100) (line-too-long)
+Graph2D.py:13:0: C0301: Line too long (110/100) (line-too-long)
+Graph2D.py:19:0: C0304: Final newline missing (missing-final-newline)
+Graph2D.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+Graph2D.py:1:0: C0103: Module name "Graph2D" doesn't conform to snake_case naming style (invalid-name)
+Graph2D.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+Graph2D.py:1:0: C0103: Function name "longestIncreasingPath" doesn't conform to snake_case naming style (invalid-name)
+Graph2D.py:4:11: E0602: Undefined variable 'm' (undefined-variable)
+Graph2D.py:4:18: E0602: Undefined variable 'n' (undefined-variable)
+Graph2D.py:10:19: E0602: Undefined variable 'm' (undefined-variable)
+Graph2D.py:11:23: E0602: Undefined variable 'n' (undefined-variable)
+Graph2D.py:13:91: E0602: Undefined variable 'current_direction' (undefined-variable)
+Graph2D.py:15:54: E0602: Undefined variable 'current_direction' (undefined-variable)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 7.50/10, -7.50)
+

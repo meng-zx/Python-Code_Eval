@@ -82,7 +82,7 @@ Failed Test Cases Summary:
 - test_random_distribution: Failed
 - test_rapid_altitude_changes: Failed
 ----------------------------------------------------------------------
-Ran 37 tests in 0.014s
+Ran 37 tests in 0.015s
 
 FAILED (failures=8)
 
@@ -93,10 +93,10 @@ Failed tests: 8
 Pass percentage: 78.38%
 
 Test: Time 
-Average running time over 1000 runs: 0.00739077 seconds
+Average running time over 1000 runs: 0.00542302 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.44 MiB
+Average memory usage over 100 runs: 38.34 MiB
 
 Test: Maintainability 
 =======================================
@@ -162,5 +162,5 @@ TrappingRainWater.py:1:0: C0103: Module name "TrappingRainWater" doesn't conform
 TrappingRainWater.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.33/10 (previous run: 7.33/10, +0.00)
+Your code has been rated at 7.33/10 (previous run: 2.50/10, +4.83)
 

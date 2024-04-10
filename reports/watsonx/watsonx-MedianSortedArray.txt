@@ -1,0 +1,105 @@
+watsonx 3 MedianSortedArray 
+
+Test: QA 
+test_both_empty_arrays (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
+test_empty_first_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
+test_empty_second_array (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
+test_example1 (MedianSortedArray_test.TestFindMedianSortedArrays) ... ERROR
+test_example2 (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+test_large_numbers (MedianSortedArray_test.TestFindMedianSortedArrays) ... FAIL
+
+Failed Test Cases Summary:
+- test_example2: Failed
+- test_large_numbers: Failed
+- test_both_empty_arrays: Failed
+- test_empty_first_array: Failed
+- test_empty_second_array: Failed
+- test_example1: Failed
+----------------------------------------------------------------------
+Ran 6 tests in 0.014s
+
+FAILED (failures=2, errors=4)
+
+Summary:
+Total tests run: 6
+Passed tests: 0
+Failed tests: 6
+Pass percentage: 0.00%
+
+Test: Time 
+Average running time over 1000 runs: 0.00832096 seconds
+
+Test: Memory 
+Average memory usage over 100 runs: 39.22 MiB
+
+Test: Maintainability 
+=======================================
+Analyzing maintainability of MedianSortedArray.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+MedianSortedArray.py
+    F 5:0 median - B
+    F 1:0 merge_sorted_arrays - A
+    F 15:0 findMedianSortedArrays - A
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.3333333333333335)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+MedianSortedArray.py:
+    h1: 6
+    h2: 14
+    N1: 10
+    N2: 20
+    vocabulary: 20
+    length: 30
+    calculated_length: 68.81274391313339
+    volume: 129.65784284662087
+    difficulty: 4.285714285714286
+    effort: 555.6764693426609
+    time: 30.87091496348116
+    bugs: 0.043219280948873624
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+MedianSortedArray.py
+    LOC: 17
+    LLOC: 15
+    SLOC: 15
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 2
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+MedianSortedArray.py - A (58.47)
+=====================================
+
+Test: Style 
+************* Module MedianSortedArray
+MedianSortedArray.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+MedianSortedArray.py:1:0: C0103: Module name "MedianSortedArray" doesn't conform to snake_case naming style (invalid-name)
+MedianSortedArray.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+MedianSortedArray.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+MedianSortedArray.py:6:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+MedianSortedArray.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+MedianSortedArray.py:15:0: C0103: Function name "findMedianSortedArrays" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 3.00/10, +2.00)
+

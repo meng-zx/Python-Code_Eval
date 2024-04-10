@@ -1,31 +1,34 @@
-GPT4 10 SwimInWater 
+watsonx 10 SwimInWater 
 
 Test: QA 
-test_example_1 (SwimInWater_test.TestSwimInWater) ... ok
-test_example_2 (SwimInWater_test.TestSwimInWater) ... ok
+test_example_1 (SwimInWater_test.TestSwimInWater) ... FAIL
+test_example_2 (SwimInWater_test.TestSwimInWater) ... FAIL
 test_linear_increase (SwimInWater_test.TestSwimInWater) ... FAIL
-test_max_elevation (SwimInWater_test.TestSwimInWater) ... ERROR
-test_single_cell (SwimInWater_test.TestSwimInWater) ... ok
+test_max_elevation (SwimInWater_test.TestSwimInWater) ... FAIL
+test_single_cell (SwimInWater_test.TestSwimInWater) ... FAIL
 
 Failed Test Cases Summary:
+- test_example_1: Failed
+- test_example_2: Failed
 - test_linear_increase: Failed
 - test_max_elevation: Failed
+- test_single_cell: Failed
 ----------------------------------------------------------------------
 Ran 5 tests in 0.004s
 
-FAILED (failures=1, errors=1)
+FAILED (failures=5)
 
 Summary:
 Total tests run: 5
-Passed tests: 3
-Failed tests: 2
-Pass percentage: 60.00%
+Passed tests: 0
+Failed tests: 5
+Pass percentage: 0.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00131470 seconds
+Average running time over 1000 runs: 0.00198709 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.70 MiB
+Average memory usage over 100 runs: 37.58 MiB
 
 Test: Maintainability 
 =======================================
@@ -36,61 +39,63 @@ Analyzing maintainability of SwimInWater.py
 Cyclomatic Complexity (CC)
 -------------------------------------
 SwimInWater.py
-    F 4:0 can_swim - B
-    F 23:0 swim_in_water - A
+    F 4:0 swim_in_water - A
 
-2 blocks (classes, functions, methods) analyzed.
-Average complexity: B (6.5)
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.0)
 =====================================
 
 =====================================
 Halstead Metrics
 -------------------------------------
 SwimInWater.py:
-    h1: 10
-    h2: 29
-    N1: 23
-    N2: 43
-    vocabulary: 39
-    length: 66
-    calculated_length: 174.10072980757323
-    volume: 348.83654644490844
-    difficulty: 7.413793103448276
-    effort: 2586.2019822639763
-    time: 143.67788790355425
-    bugs: 0.11627884881496948
+    h1: 5
+    h2: 16
+    N1: 18
+    N2: 36
+    vocabulary: 21
+    length: 54
+    calculated_length: 75.60964047443682
+    volume: 237.1851408300531
+    difficulty: 5.625
+    effort: 1334.1664171690486
+    time: 74.12035650939158
+    bugs: 0.0790617136100177
 =====================================
 
 =====================================
 Raw Metrics
 -------------------------------------
 SwimInWater.py
-    LOC: 34
-    LLOC: 26
-    SLOC: 26
-    Comments: 1
-    Single comments: 1
+    LOC: 23
+    LLOC: 13
+    SLOC: 13
+    Comments: 6
+    Single comments: 5
     Multi: 0
-    Blank: 7
+    Blank: 5
     - Comment Stats
-        (C % L): 3%
-        (C % S): 4%
-        (C + M % L): 3%
+        (C % L): 26%
+        (C % S): 46%
+        (C + M % L): 26%
 =====================================
 
 =====================================
 Maintainability Index (MI)
 -------------------------------------
-SwimInWater.py - A (61.27)
+SwimInWater.py - A (87.79)
 =====================================
 
 Test: Style 
 ************* Module SwimInWater
+SwimInWater.py:19:0: C0301: Line too long (106/100) (line-too-long)
+SwimInWater.py:22:0: C0301: Line too long (103/100) (line-too-long)
 SwimInWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 SwimInWater.py:1:0: C0103: Module name "SwimInWater" doesn't conform to snake_case naming style (invalid-name)
 SwimInWater.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
-SwimInWater.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+SwimInWater.py:4:18: W0613: Unused argument 'grid' (unused-argument)
+SwimInWater.py:5:4: W0612: Unused variable 'min_time_to_reach_bottom_right' (unused-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.40/10 (previous run: 8.40/10, +0.00)
+Your code has been rated at 3.64/10 (previous run: 8.40/10, -4.76)
 

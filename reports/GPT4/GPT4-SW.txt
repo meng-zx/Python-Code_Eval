@@ -24,10 +24,10 @@ Failed tests: 1
 Pass percentage: 87.50%
 
 Test: Time 
-Average running time over 1000 runs: 0.00059584 seconds
+Average running time over 1000 runs: 0.00063126 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.37 MiB
+Average memory usage over 100 runs: 38.27 MiB
 
 Test: Maintainability 
 =======================================
@@ -92,6 +92,6 @@ SW.py:1:0: C0103: Module name "SW" doesn't conform to snake_case naming style (i
 SW.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
 SW.py:4:0: C0103: Function name "maxSlidingWindow" doesn't conform to snake_case naming style (invalid-name)
 
------------------------------------
-Your code has been rated at 6.92/10
+------------------------------------------------------------------
+Your code has been rated at 6.92/10 (previous run: 6.92/10, +0.00)
 

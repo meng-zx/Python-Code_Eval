@@ -110,7 +110,7 @@ Failed Test Cases Summary:
 - test_wide_valley: Failed
 - test_empty: Failed
 ----------------------------------------------------------------------
-Ran 37 tests in 0.026s
+Ran 37 tests in 0.025s
 
 FAILED (failures=35, errors=1)
 
@@ -121,7 +121,7 @@ Failed tests: 36
 Pass percentage: 2.70%
 
 Test: Time 
-Average running time over 1000 runs: 0.01564768 seconds
+Average running time over 1000 runs: 0.01553086 seconds
 
 Test: Memory 
 Average memory usage over 100 runs: 38.40 MiB

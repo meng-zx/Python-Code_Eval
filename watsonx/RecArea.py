@@ -1,14 +1,13 @@
 def compute_area(ax1, ay1, ax2, ay2, bx1, by1, bx2, by2):
-    # Calculate the area of both rectangles
-    area1 = (ax2 - ax1) * (ay2 - ay1)
-    area2 = (bx2 - bx1) * (by2 - by1)
+    # Calculate the lengths of the sides of both rectangles
+    length_rl = abs(ax2 - ax1)
+    width_rl = abs(ay2 - ay1)
+    length_tl = abs(bx2 - bx1)
+    height_tl = abs(by2 - by1)
 
-    # Calculate the width and height of the overlap
-    overlap_width = min(ax2, bx2) - max(ax1, bx1)
-    overlap_height = min(ay2, by2) - max(ay1, by1)
+    # Calculate the areas of both rectangles
+    area_rl = length_rl * width_rl
+    area_tl = length_tl * height_tl
 
-    # Calculate the area of the overlap if there is one
-    overlap_area = max(overlap_width, 0) * max(overlap_height, 0)
-
-    # Sum the areas of both rectangles and subtract the overlap area
-    return area1 + area2 - overlap_area
+    # Return the sum of the areas of both rectangles
+    return area_rl + area_tl

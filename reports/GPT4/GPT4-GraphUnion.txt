@@ -23,10 +23,10 @@ Failed tests: 0
 Pass percentage: 100.00%
 
 Test: Time 
-Average running time over 1000 runs: 0.00009278 seconds
+Average running time over 1000 runs: 0.00008797 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 38.00 MiB
+Average memory usage over 100 runs: 37.75 MiB
 
 Test: Maintainability 
 =======================================
@@ -101,6 +101,6 @@ GraphUnion.py:14:8: C0103: Variable name "rootY" doesn't conform to snake_case n
 GraphUnion.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
 GraphUnion.py:27:0: C0103: Function name "makeConnected" doesn't conform to snake_case naming style (invalid-name)
 
------------------------------------
-Your code has been rated at 6.77/10
+------------------------------------------------------------------
+Your code has been rated at 6.77/10 (previous run: 5.62/10, +1.15)
 
