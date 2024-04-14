@@ -1,4 +1,4 @@
-GPT4 4 BFS 
+GPT4 0 BFS 
 
 Test: QA 
 test_all_cells_same_letter (BFS_test.TestFindWords) ... FAIL
@@ -24,7 +24,7 @@ Failed Test Cases Summary:
 - test_large_input: Failed
 - test_multiple_words_formed_from_same_path: Failed
 ----------------------------------------------------------------------
-Ran 14 tests in 0.017s
+Ran 14 tests in 0.016s
 
 FAILED (failures=6)
 
@@ -35,10 +35,10 @@ Failed tests: 6
 Pass percentage: 57.14%
 
 Test: Time 
-Average running time over 100 runs: 0.01510838 seconds
+Average running time over 100 runs: 0.01385303 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.75 MiB
+Average memory usage over 100 runs: 38.12 MiB
 
 Test: Maintainability 
 =======================================
@@ -107,7 +107,8 @@ BFS.py:4:0: C0115: Missing class docstring (missing-class-docstring)
 BFS.py:4:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 BFS.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 BFS.py:10:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
+BFS.py:1:0: W0611: Unused List imported from typing (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.59/10 (previous run: 5.00/10, +2.59)
+Your code has been rated at 7.24/10 (previous run: 0.00/10, +7.24)
 

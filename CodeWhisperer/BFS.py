@@ -15,7 +15,7 @@ def search(board, i, j, word, index, visited):
     return found
 
 
-def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+def findWords(board, words):
     m, n = len(board), len(board[0])
     results = []
 

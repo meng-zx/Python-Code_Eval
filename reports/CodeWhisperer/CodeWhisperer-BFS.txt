@@ -1,34 +1,45 @@
-CodeWhisperer 4 BFS 
+CodeWhisperer 0 BFS 
 
 Test: QA 
-Traceback (most recent call last):
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/qa_BFS.py", line 2, in <module>
-    from BFS_test import TestFindWords as test_class # Modify the file and class name
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
-    from BFS import findWords  # Import the function from your script
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
-    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
-NameError: name 'List' is not defined. Did you mean: 'list'?
+test_all_cells_same_letter (BFS_test.TestFindWords) ... FAIL
+test_diagonal_non_adjacent (BFS_test.TestFindWords) ... FAIL
+test_diagonal_words_not_allowed (BFS_test.TestFindWords) ... FAIL
+test_empty_board (BFS_test.TestFindWords) ... ERROR
+test_empty_words (BFS_test.TestFindWords) ... ok
+test_example1 (BFS_test.TestFindWords) ... ok
+test_example2 (BFS_test.TestFindWords) ... ok
+test_large_case_with_sparse_words (BFS_test.TestFindWords) ... FAIL
+test_large_input (BFS_test.TestFindWords) ... FAIL
+test_multiple_words_formed_from_same_path (BFS_test.TestFindWords) ... FAIL
+test_single_character_board_and_word (BFS_test.TestFindWords) ... ok
+test_single_row_or_column_board (BFS_test.TestFindWords) ... ok
+test_word_subset_of_another (BFS_test.TestFindWords) ... ok
+test_words_with_nonexistent_letters (BFS_test.TestFindWords) ... ok
+
+Failed Test Cases Summary:
+- test_all_cells_same_letter: Failed
+- test_diagonal_non_adjacent: Failed
+- test_diagonal_words_not_allowed: Failed
+- test_large_case_with_sparse_words: Failed
+- test_large_input: Failed
+- test_multiple_words_formed_from_same_path: Failed
+- test_empty_board: Failed
+----------------------------------------------------------------------
+Ran 14 tests in 0.007s
+
+FAILED (failures=6, errors=1)
+
+Summary:
+Total tests run: 14
+Passed tests: 7
+Failed tests: 7
+Pass percentage: 50.00%
 
 Test: Time 
-Traceback (most recent call last):
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/time_BFS.py", line 4, in <module>
-    from BFS_test import TestFindWords as test_class  # Modify the file and class name
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
-    from BFS import findWords  # Import the function from your script
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
-    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
-NameError: name 'List' is not defined. Did you mean: 'list'?
+Average running time over 100 runs: 0.00401478 seconds
 
 Test: Memory 
-Traceback (most recent call last):
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/memory_BFS.py", line 5, in <module>
-    from BFS_test import TestFindWords as test_class  # Modify the file and class name
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS_test.py", line 2, in <module>
-    from BFS import findWords  # Import the function from your script
-  File "/mnt/d/Info5900/python-code-eval/testcases/BFS/BFS.py", line 18, in <module>
-    def findWords(board: List[List[str]], words: List[str]) -> List[str]:
-NameError: name 'List' is not defined. Did you mean: 'list'?
+Average memory usage over 100 runs: 37.90 MiB
 
 Test: Maintainability 
 =======================================
@@ -97,11 +108,7 @@ BFS.py:1:0: R0913: Too many arguments (6/5) (too-many-arguments)
 BFS.py:5:7: R0916: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
 BFS.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
 BFS.py:18:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
-BFS.py:18:21: E0602: Undefined variable 'List' (undefined-variable)
-BFS.py:18:26: E0602: Undefined variable 'List' (undefined-variable)
-BFS.py:18:45: E0602: Undefined variable 'List' (undefined-variable)
-BFS.py:18:59: E0602: Undefined variable 'List' (undefined-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 5.00/10, -5.00)
+Your code has been rated at 5.79/10 (previous run: 4.38/10, +1.41)
 

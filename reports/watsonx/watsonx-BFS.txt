@@ -1,4 +1,4 @@
-watsonx 4 BFS 
+watsonx 0 BFS 
 
 Test: QA 
 test_all_cells_same_letter (BFS_test.TestFindWords) ... FAIL
@@ -42,10 +42,10 @@ Failed tests: 13
 Pass percentage: 7.14%
 
 Test: Time 
-Average running time over 100 runs: 0.00559887 seconds
+Average running time over 100 runs: 0.00545230 seconds
 
 Test: Memory 
-Average memory usage over 100 runs: 37.80 MiB
+Average memory usage over 100 runs: 38.07 MiB
 
 Test: Maintainability 
 =======================================
@@ -115,7 +115,8 @@ BFS.py:4:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 BFS.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
 BFS.py:10:0: C0103: Function name "findWords" doesn't conform to snake_case naming style (invalid-name)
 BFS.py:15:8: W0612: Unused variable 'word' (unused-variable)
+BFS.py:1:0: W0611: Unused List imported from typing (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.00/10 (previous run: 7.59/10, -2.59)
+Your code has been rated at 4.38/10 (previous run: 7.24/10, -2.87)
 

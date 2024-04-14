@@ -1,5 +1,5 @@
 
-def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+def findWords(board, words) :
     if not board or not words:
         return []
 

@@ -7,7 +7,7 @@ class TrieNode:
         self.is_end_of_word = False
 
 
-def findWords(board: List[List[str]], words: List[str]) -> List[str]:
+def findWords(board, words):
     # Initialize result list
     result = []
 
