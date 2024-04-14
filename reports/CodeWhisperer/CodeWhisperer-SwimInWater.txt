@@ -1,4 +1,67 @@
-CodeWhisperer 2 SwimInWater 
+CodeWhisperer 0 SwimInWater 
 
-Test: QA 
-test_all_same_values (SwimInWater_test.TestSwimInWater) ... 
+Test: Maintainability 
+=======================================
+Analyzing maintainability of SwimInWater.py
+=======================================
+
+=====================================
+Cyclomatic Complexity (CC)
+-------------------------------------
+SwimInWater.py
+    F 6:0 swim_in_water - B
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (9.0)
+=====================================
+
+=====================================
+Halstead Metrics
+-------------------------------------
+SwimInWater.py:
+    h1: 8
+    h2: 20
+    N1: 18
+    N2: 32
+    vocabulary: 28
+    length: 50
+    calculated_length: 110.43856189774725
+    volume: 240.36774610288018
+    difficulty: 6.4
+    effort: 1538.3535750584333
+    time: 85.46408750324629
+    bugs: 0.08012258203429339
+=====================================
+
+=====================================
+Raw Metrics
+-------------------------------------
+SwimInWater.py
+    LOC: 26
+    LLOC: 18
+    SLOC: 18
+    Comments: 0
+    Single comments: 0
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+=====================================
+
+=====================================
+Maintainability Index (MI)
+-------------------------------------
+SwimInWater.py - A (54.74)
+=====================================
+
+Test: Style 
+************* Module SwimInWater
+SwimInWater.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+SwimInWater.py:1:0: C0103: Module name "SwimInWater" doesn't conform to snake_case naming style (invalid-name)
+SwimInWater.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 9.00/10, -0.67)
+
