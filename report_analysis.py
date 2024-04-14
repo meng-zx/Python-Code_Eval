@@ -68,23 +68,25 @@ for model, path in model_paths.items():
 
 num_tests = len(test_names)
 x = np.arange(num_tests)
-width = 0.2
+total_width = 0.8
+width = total_width / len(metrics_data)
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 plt.ion()
 for metric in metrics_data:
     fig, ax = plt.subplots()
+    rects = []
     for i, (model, values) in enumerate(metrics_data[metric].items()):
-        # None -> 0
-        values_with_zeros = [0 if v is None else v for v in values]
-        ax.bar(x + i * width, values_with_zeros, width, label=model)
+        rect = ax.bar(x + i * width - total_width / 2, values, width, label=model)
+        rects.append(rect)
 
     ax.set_ylabel(metric)
-    ax.set_title(f'{metric} by test and model')
+    ax.set_title(f'{metric}')
     ax.set_xticks(x + width * (len(model_paths) - 1) / 2)
     ax.set_xticklabels(test_names, rotation=45, ha='right')
-    ax.legend()
+    ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+    fig.set_size_inches(12, 8)
     fig.savefig(os.path.join(fig_directory, f"{metric}.png"))
     plt.show()
 
