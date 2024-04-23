@@ -44,7 +44,7 @@ def parse_report(file_path):
 # dir for each model
 model_paths = {
     'GPT4': 'reports/GPT4',
-    'Watsons': 'reports/watsonx',
+    'Watsonx': 'reports/watsonx',
     'Claude': 'reports/Claude',
     'CodeWhisperer': 'reports/CodeWhisperer',
 }
