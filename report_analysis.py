@@ -4,6 +4,7 @@ import os
 import re
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 
 fig_directory = '/mnt/d/cornell/24sp/info5900/Python-Code_Eval/fig'
 if not os.path.exists(fig_directory):
@@ -42,10 +43,10 @@ def parse_report(file_path):
 
 # dir for each model
 model_paths = {
-    'GPT4': '/mnt/d/cornell/24sp/info5900/Python-Code_Eval/reports/GPT4',
-    'Watsons': '/mnt/d/cornell/24sp/info5900/Python-Code_Eval/reports/watsonx',
-    'Claude': '/mnt/d/cornell/24sp/info5900/Python-Code_Eval/reports/Claude',
-    'CodeWhisperer': '/mnt/d/cornell/24sp/info5900/Python-Code_Eval/reports/CodeWhisperer',
+    'GPT4': 'reports/GPT4',
+    'Watsons': 'reports/watsonx',
+    'Claude': 'reports/Claude',
+    'CodeWhisperer': 'reports/CodeWhisperer',
 }
 
 test_names = [filename[:-4] for filename in sorted(os.listdir(next(iter(model_paths.values())))) if
@@ -64,6 +65,59 @@ for model, path in model_paths.items():
                     metrics_data[metric][model].append(value)
                 else:
                     print(f"Warning: Missing data for {metric} in {file_path}")
+
+
+
+# json_file_path = 'metrics_data.json'
+#
+#
+# with open(json_file_path, 'w') as file:
+#     json.dump(metrics_data, file)
+#
+# problem_names = ["BFS", "Graph2D", "GraphUnion", "LIS", "MedianSortedArray", "RecArea", "RPN", "SW", "SwimInWater", "TrappingRainWater"]
+# pname_file_path = 'problem_names_array.json'
+# with open(pname_file_path, 'w') as file:
+#     json.dump(problem_names, file)
+
+# problem_details={}
+# problem_details["TrappingRainWater"]={"difficulty": "hard",
+#                                       "tags" : []
+#                                       }
+# problem_details["RPN"]={"difficulty": "medium",
+#                                       "tags" : ['stack']
+#                                       }
+# problem_details["MedianSortedArray"]={"difficulty": "hard",
+#                                       "tags" : ['binary search']
+#                                       }
+# problem_details["LIS"]={"difficulty": "medium",
+#                                       "tags" : ['dp']
+#                                       }
+# problem_details["SwimInWater"]={"difficulty": "hard",
+#                                       "tags" : ['priority queue', 'graph']
+#                                       }
+# problem_details["Graph2D"]={"difficulty": "hard",
+#                                       "tags" : ['dp', 'graph']
+#                                       }
+# problem_details["GraphUnion"]={"difficulty": "medium",
+#                                       "tags" : ['union', 'graph']
+#                                       }
+#
+# problem_details["BFS"]={"difficulty": "hard",
+#                                       "tags" : ['bfs', 'trie']
+#                                       }
+# problem_details["SW"]={"difficulty": "hard",
+#                                       "tags" : ['sliding windows']
+#                                       }
+# problem_details["RecArea"]={"difficulty": "medium",
+#                                       "tags" : ['rectangle area']
+#                                       }
+#
+#
+# detail_file_path = 'problem_details.json'
+
+
+with open(detail_file_path, 'w') as file:
+    json.dump(problem_details, file)
 
 
 num_tests = len(test_names)
@@ -90,9 +144,9 @@ for metric in metrics_data:
     fig.savefig(os.path.join(fig_directory, f"{metric}.png"))
     plt.show()
 
-# for metric in metrics_data:
-#     fig, ax = plt.subplots()
-#     for i, (model, values) in enumerate(metrics_data[metric].items()):
-#         if any(v is None for v in values):
-#             print(f"Cannot plot {metric} for {model} because it contains None values")
-#             continue
+for metric in metrics_data:
+    fig, ax = plt.subplots()
+    for i, (model, values) in enumerate(metrics_data[metric].items()):
+        if any(v is None for v in values):
+            print(f"Cannot plot {metric} for {model} because it contains None values")
+            continue

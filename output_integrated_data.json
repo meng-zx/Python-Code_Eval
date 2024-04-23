@@ -1,0 +1,384 @@
+{
+    "BFS": {
+        "tags": [
+            "bfs",
+            "trie"
+        ],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 57.14,
+                "Watsons": 7.14,
+                "Claude": 42.86,
+                "CodeWhisperer": 50.0
+            },
+            "Time": {
+                "GPT4": 0.01385303,
+                "Watsons": 0.0054523,
+                "Claude": 0.01393982,
+                "CodeWhisperer": 0.00401478
+            },
+            "Memory": {
+                "GPT4": 38.12,
+                "Watsons": 38.07,
+                "Claude": 39.07,
+                "CodeWhisperer": 37.9
+            },
+            "Maintainability": {
+                "GPT4": 71.77,
+                "Watsons": 90.47,
+                "Claude": 51.34,
+                "CodeWhisperer": 52.25
+            },
+            "Style": {
+                "GPT4": 7.24,
+                "Watsons": 4.38,
+                "Claude": 7.92,
+                "CodeWhisperer": 5.79
+            }
+        }
+    },
+    "Graph2D": {
+        "tags": [
+            "dp",
+            "graph"
+        ],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 70.0,
+                "Watsons": 0.0,
+                "Claude": 70.0,
+                "CodeWhisperer": 0.0
+            },
+            "Time": {
+                "GPT4": 0.05477382,
+                "Watsons": 0.01666705,
+                "Claude": 0.05702755,
+                "CodeWhisperer": 0.01801965
+            },
+            "Memory": {
+                "GPT4": 49.12,
+                "Watsons": 38.31,
+                "Claude": 47.54,
+                "CodeWhisperer": 38.67
+            },
+            "Maintainability": {
+                "GPT4": 54.73,
+                "Watsons": 91.53,
+                "Claude": 55.13,
+                "CodeWhisperer": 59.72
+            },
+            "Style": {
+                "GPT4": 7.5,
+                "Watsons": 0.0,
+                "Claude": 7.37,
+                "CodeWhisperer": 6.0
+            }
+        }
+    },
+    "GraphUnion": {
+        "tags": [
+            "union",
+            "graph"
+        ],
+        "difficulty": "medium",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 94.12,
+                "Watsons": 47.06,
+                "Claude": 94.12,
+                "CodeWhisperer": 0.0
+            },
+            "Time": {
+                "GPT4": 0.0006387,
+                "Watsons": 0.00383738,
+                "Claude": 0.00066183,
+                "CodeWhisperer": 0.01233961
+            },
+            "Memory": {
+                "GPT4": 38.24,
+                "Watsons": 37.85,
+                "Claude": 38.15,
+                "CodeWhisperer": 37.66
+            },
+            "Maintainability": {
+                "GPT4": 49.22,
+                "Watsons": 54.69,
+                "Claude": 70.01,
+                "CodeWhisperer": 58.89
+            },
+            "Style": {
+                "GPT4": 6.77,
+                "Watsons": 6.5,
+                "Claude": 8.1,
+                "CodeWhisperer": 4.12
+            }
+        }
+    },
+    "LIS": {
+        "tags": [
+            "dp"
+        ],
+        "difficulty": "medium",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 93.1,
+                "Watsons": 93.1,
+                "Claude": 93.1,
+                "CodeWhisperer": 89.66
+            },
+            "Time": {
+                "GPT4": 0.00389554,
+                "Watsons": 0.39358888,
+                "Claude": 0.50168306,
+                "CodeWhisperer": 0.39275214
+            },
+            "Memory": {
+                "GPT4": 37.79,
+                "Watsons": 38.2,
+                "Claude": 38.06,
+                "CodeWhisperer": 38.11
+            },
+            "Maintainability": {
+                "GPT4": 89.79,
+                "Watsons": 90.43,
+                "Claude": 84.27,
+                "CodeWhisperer": 66.62
+            },
+            "Style": {
+                "GPT4": 6.15,
+                "Watsons": 6.0,
+                "Claude": 5.0,
+                "CodeWhisperer": 5.0
+            }
+        }
+    },
+    "MedianSortedArray": {
+        "tags": [
+            "binary search"
+        ],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 85.71,
+                "Watsons": 14.29,
+                "Claude": 85.71,
+                "CodeWhisperer": 42.86
+            },
+            "Time": {
+                "GPT4": 0.0005347,
+                "Watsons": 0.00901187,
+                "Claude": 0.00052187,
+                "CodeWhisperer": 0.00164222
+            },
+            "Memory": {
+                "GPT4": 37.79,
+                "Watsons": 39.29,
+                "Claude": 37.59,
+                "CodeWhisperer": 37.71
+            },
+            "Maintainability": {
+                "GPT4": 79.5,
+                "Watsons": 58.47,
+                "Claude": 63.61,
+                "CodeWhisperer": 52.47
+            },
+            "Style": {
+                "GPT4": 3.0,
+                "Watsons": 5.0,
+                "Claude": 4.0,
+                "CodeWhisperer": 4.5
+            }
+        }
+    },
+    "RecArea": {
+        "tags": [
+            "rectangle area"
+        ],
+        "difficulty": "medium",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 76.47,
+                "Watsons": 5.88,
+                "Claude": 76.47,
+                "CodeWhisperer": 76.47
+            },
+            "Time": {
+                "GPT4": 0.00192923,
+                "Watsons": 0.01198022,
+                "Claude": 0.0019493,
+                "CodeWhisperer": 0.00247978
+            },
+            "Memory": {
+                "GPT4": 37.56,
+                "Watsons": 38.01,
+                "Claude": 37.65,
+                "CodeWhisperer": 37.8
+            },
+            "Maintainability": {
+                "GPT4": 73.18,
+                "Watsons": 79.85,
+                "Claude": 79.04,
+                "CodeWhisperer": 62.85
+            },
+            "Style": {
+                "GPT4": 7.33,
+                "Watsons": 2.63,
+                "Claude": 6.0,
+                "CodeWhisperer": 6.67
+            }
+        }
+    },
+    "RPN": {
+        "tags": [
+            "stack"
+        ],
+        "difficulty": "medium",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 66.67,
+                "Watsons": 50.0,
+                "Claude": 66.67,
+                "CodeWhisperer": 66.67
+            },
+            "Time": {
+                "GPT4": 0.00245342,
+                "Watsons": 0.00442285,
+                "Claude": 0.00239606,
+                "CodeWhisperer": 0.00246257
+            },
+            "Memory": {
+                "GPT4": 38.11,
+                "Watsons": 38.27,
+                "Claude": 37.91,
+                "CodeWhisperer": 37.53
+            },
+            "Maintainability": {
+                "GPT4": 95.37,
+                "Watsons": 94.54,
+                "Claude": 87.1,
+                "CodeWhisperer": 64.96
+            },
+            "Style": {
+                "GPT4": 4.29,
+                "Watsons": 5.0,
+                "Claude": 5.83,
+                "CodeWhisperer": 4.29
+            }
+        }
+    },
+    "SW": {
+        "tags": [
+            "sliding windows"
+        ],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 77.27,
+                "Watsons": 18.18,
+                "Claude": 77.27,
+                "CodeWhisperer": 77.27
+            },
+            "Time": {
+                "GPT4": 0.01823102,
+                "Watsons": 3.67751299,
+                "Claude": 0.01241319,
+                "CodeWhisperer": 0.01534074
+            },
+            "Memory": {
+                "GPT4": 42.9,
+                "Watsons": 57.91,
+                "Claude": 42.39,
+                "CodeWhisperer": 42.33
+            },
+            "Maintainability": {
+                "GPT4": 89.36,
+                "Watsons": 64.44,
+                "Claude": 84.01,
+                "CodeWhisperer": 61.57
+            },
+            "Style": {
+                "GPT4": 6.92,
+                "Watsons": 6.0,
+                "Claude": 8.0,
+                "CodeWhisperer": 6.15
+            }
+        }
+    },
+    "SwimInWater": {
+        "tags": [
+            "priority queue",
+            "graph"
+        ],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 59.09,
+                "Watsons": 0.0,
+                "Claude": 66.67,
+                "CodeWhisperer": 0.0
+            },
+            "Time": {
+                "GPT4": 0.02240905,
+                "Watsons": 0.00799199,
+                "Claude": 0.00286583,
+                "CodeWhisperer": 0.0
+            },
+            "Memory": {
+                "GPT4": 37.94,
+                "Watsons": 38.05,
+                "Claude": 37.98,
+                "CodeWhisperer": 0.0
+            },
+            "Maintainability": {
+                "GPT4": 61.27,
+                "Watsons": 87.79,
+                "Claude": 48.62,
+                "CodeWhisperer": 54.74
+            },
+            "Style": {
+                "GPT4": 8.4,
+                "Watsons": 3.64,
+                "Claude": 9.0,
+                "CodeWhisperer": 8.33
+            }
+        }
+    },
+    "TrappingRainWater": {
+        "tags": [],
+        "difficulty": "hard",
+        "metrics": {
+            "Accuracy": {
+                "GPT4": 72.34,
+                "Watsons": 0.0,
+                "Claude": 72.34,
+                "CodeWhisperer": 68.09
+            },
+            "Time": {
+                "GPT4": 0.01003031,
+                "Watsons": 0.02318877,
+                "Claude": 0.02224133,
+                "CodeWhisperer": 0.02110961
+            },
+            "Memory": {
+                "GPT4": 38.33,
+                "Watsons": 38.63,
+                "Claude": 39.14,
+                "CodeWhisperer": 38.77
+            },
+            "Maintainability": {
+                "GPT4": 82.87,
+                "Watsons": 96.45,
+                "Claude": 81.07,
+                "CodeWhisperer": 59.95
+            },
+            "Style": {
+                "GPT4": 7.33,
+                "Watsons": 2.5,
+                "Claude": 7.5,
+                "CodeWhisperer": 7.14
+            }
+        }
+    }
+}

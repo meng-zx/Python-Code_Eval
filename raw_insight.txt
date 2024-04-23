@@ -1,0 +1,24 @@
+1. GPT4
+Accuracy: High, consistently over 70% in most problems.
+Time: Generally very low, indicating fast performance.
+Memory: Usage around 38, fairly consistent.
+Maintainability: Varied, but generally high, indicating good code quality.
+Style: Average around 6.7, decent but with room for improvement.
+2. Watsons
+Accuracy: Low accuracy on many problems, especially Graph2D and SW.
+Time: Varied widely, particularly high on SW problem.
+Memory: Consistent around 38, except a spike in SW.
+Maintainability: High, better than GPT4 in most problems.
+Style: Lower scores, indicating lesser code style quality.
+3. Claude
+Accuracy: Comparable to GPT4, generally high.
+Time: High on LIS problem, generally moderate.
+Memory: Very consistent across problems, similar to GPT4.
+Maintainability: Generally good, with a few problems having lower scores.
+Style: Highest scores among models, indicating best adherence to coding style guidelines.
+4. CodeWhisperer
+Accuracy: Varied, with complete misses on Graph2D and GraphUnion.
+Time: Low but varied, high on LIS problem.
+Memory: Consistent, except no data on SwimInWater.
+Maintainability: Moderate, generally lower than other models.
+Style: Mixed, generally around the mid-range.
