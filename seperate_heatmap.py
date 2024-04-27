@@ -42,7 +42,9 @@ def create_separate_heatmaps_by_difficulty(df, directory):
                 plt.title(f'{metric} - {difficulty.capitalize()} Problems')
                 continue
             pivot_table = difficulty_data.pivot(index="Problem", columns="Model", values="Score")
-            sns.heatmap(pivot_table, annot=True, fmt=".2f", cmap="coolwarm", cbar_kws={'label': 'Score'})
+            ordered_models = ["GPT4", "Watsonx", "Claude", "CodeWhisperer"]
+            pivot_table = pivot_table.reindex(columns=ordered_models)
+            sns.heatmap(pivot_table, annot=True, fmt=".2f", cmap="YlGn", cbar_kws={'label': 'Score'})
             plt.title(f'{metric} - {difficulty.capitalize()} Problems')
 
         plt.tight_layout()
@@ -55,4 +57,4 @@ if __name__ == "__main__":
     # Load data
     data = load_data_from_json('output_integrated_data.json')  # Update this path as necessary
     df = prepare_data_for_visualization(data)
-    create_separate_heatmaps_by_difficulty(df, 'separate_heatmap/')
+    create_separate_heatmaps_by_difficulty(df, 'seperate_heatmap_green/')
