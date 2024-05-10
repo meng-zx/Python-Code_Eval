@@ -64,4 +64,10 @@ Claude/
 └── ReversePolishNotation.py
 ```
 
+## 4. Raw data
 
+Raw data is stored in `output_integrated_da.json`.
+
+## 5. Visualization
+
+The visualization is stored in folders `visualization/`, `seperate_heatmap/`, and `seperate_heatmap_green/`.
